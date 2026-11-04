@@ -176,8 +176,10 @@
                       <p class="field__error">Enter your date of birth as DD/MM/YYYY</p>
                     </div>
                   </div>
-                  <button class="btn btn--dark" type="submit">save profile</button>
+                  <button type="button" class="btn btn--dark" data-bs-toggle="modal" data-bs-target="#exampleModal">save
+                    profile</button>
                 </form>
+
                 <form class="account-panel details-panel" data-details-form="billing" novalidate="">
                   <h3 class="heading-3">Billing address</h3>
                   <div class="form">
@@ -279,7 +281,8 @@
               <div class="account-panel close-account">
                 <div class="close-account__text">
                   <h3 class="heading-4">Close your account</h3>
-                  <p class="close-account__body dif_bottom_mob">Your downloads and invoices go with it. Download anything you want to
+                  <p class="close-account__body dif_bottom_mob">Your downloads and invoices go with it. Download
+                    anything you want to
                     keep first.</p>
                 </div>
                 <a class="close-account__link"
@@ -287,6 +290,19 @@
               </div>
             </div>
           </section>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content tirthak_modalt mx-auto">
+                 <img src="assets/images/tick_t.svg" alt="" width="72" height="72">
+                <div>
+                  <h1 class="modal_tt">Details saved</h1>
+                  <p class="modal_pp">Your details are updated. The next invoice uses them.</p>
+                </div>
+                <button class="btn btn--dark w-100" type="submit">close</button>
+              </div>
+            </div>
+          </div>
         </main>
 
       </main>
