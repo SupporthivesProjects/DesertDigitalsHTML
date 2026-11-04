@@ -298,6 +298,12 @@ max-width: 327px;
 width: 100%;
 
     }
+    .t_stab {
+                margin: 0 0 24px 0px;
+    }
+    .t_stab_inner {
+        border-radius: 0 16px 0 0!important;
+    }
 }
 
 @media only screen and (min-width: 780px) and (max-width:991px) {}

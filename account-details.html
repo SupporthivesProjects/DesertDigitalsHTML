@@ -126,8 +126,8 @@
               <button class="btn btn--outline btn--small account-hero__signout--mobile" type="button" data-signout=""
                 data-reveal="">log out</button>
             </div>
-            <nav class="wrap account-tabs" aria-label="Account">
-              <div class="account-tabs__bar" data-tab-bar="" data-reveal="">
+            <nav class="wrap account-tabs t_stab" aria-label="Account">
+              <div class="account-tabs__bar t_stab_inner" data-tab-bar="" data-reveal="">
                 <div class="account-tabs__group">
                   <a class="tab" href="account-downloads.php">downloads <span class="tab__count"
                       data-count-products="">7</span>
@@ -294,7 +294,7 @@
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
               <div class="modal-content tirthak_modalt mx-auto">
-                 <img src="assets/images/tick_t.svg" alt="" width="72" height="72">
+                <img src="assets/images/tick_t.svg" alt="" width="72" height="72">
                 <div>
                   <h1 class="modal_tt">Details saved</h1>
                   <p class="modal_pp">Your details are updated. The next invoice uses them.</p>
@@ -399,6 +399,23 @@
     <script>
       AOS.init();
     </script>
+
+
   </body>
 
   </html>
+
+
+
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabsBar = document.querySelector('.account-tabs__bar');
+
+      if (tabsBar) {
+        tabsBar.scrollLeft = tabsBar.scrollWidth;
+      }
+    });
+  </script>
