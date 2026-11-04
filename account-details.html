@@ -1,0 +1,388 @@
+<!doctype php>
+<php lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desertdigitals</title>
+    <link rel="icon" href="./assets/logos/mark-amber.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/devcss/mainBase.css">
+  </head>
+
+  <body>
+    <div class="main-div">
+      <header class="site-header is-solid" data-header="">
+        <a class="logo" href="index.php" aria-label="desertdigitals home">
+          <img src="./assets/logos/mark-amber.svg" alt="" width="28" height="28"><span>desertdigitals</span>
+        </a>
+        <nav class="site-nav" aria-label="Main"><a class="site-nav__link" href="store.php">/products</a><a
+            class="site-nav__link" href="one-on-one.php">/one-on-one</a><a class="site-nav__link"
+            href="about.php">/about</a><a class="site-nav__link" href="contact.php">/contact</a></nav>
+        <div class="site-header__right">
+          <div class="currency site-header__hide-mobile" data-currency-select="">
+            <button class="currency__button" aria-haspopup="listbox" aria-expanded="false">
+              <span data-currency-label="">usd</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </button>
+            <ul class="currency__list" role="listbox" aria-label="Currency">
+              <li>
+                <button class="currency__option" role="option" data-currency="USD" aria-selected="true">
+                  usd<span>$</span>
+                </button>
+              </li>
+              <li>
+                <button class="currency__option" role="option" data-currency="EUR" aria-selected="false">
+                  eur<span>€</span>
+                </button>
+              </li>
+              <li>
+                <button class="currency__option" role="option" data-currency="GBP" aria-selected="false">
+                  gbp<span>£</span>
+                </button>
+              </li>
+              <li>
+                <button class="currency__option" role="option" data-currency="USD" aria-selected="true">
+                  usd<span>$</span>
+                </button>
+              </li>
+              <li>
+                <button class="currency__option" role="option" data-currency="EUR" aria-selected="false">
+                  eur<span>€</span>
+                </button>
+              </li>
+              <li>
+                <button class="currency__option" role="option" data-currency="GBP" aria-selected="false">
+                  gbp<span>£</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <span class="site-header__hide-mobile" data-account-link=""><a href="login.php">login</a></span>
+          <a href="cart.php">cart(<span class="cart-count" data-cart-count="">0</span>)</a>
+          <button class="burger" aria-label="Open menu" aria-expanded="false" data-menu-open=""><svg viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path d="M3 8h18M9 16h12"></path>
+            </svg></button>
+        </div>
+      </header>
+      <div class="menu" id="menu" aria-hidden="true" role="dialog" aria-label="Menu">
+        <div class="menu__top">
+          <a class="logo" href="index.php" aria-label="desertdigitals home">
+            <img src="assets/logos/mark-amber.svg" alt="" width="28" height="28">
+            <span>desertdigitals</span>
+          </a>
+          <button class="menu__close" data-menu-close="">close <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 6l12 12M18 6L6 18"></path>
+            </svg>
+          </button>
+        </div>
+        <nav class="menu__nav" aria-label="Mobile">
+          <a class="menu__link" href="store.php" aria-current="page">/products</a>
+          <a class="menu__link" href="one-on-one.php">/one-on-one</a>
+          <a class="menu__link" href="about.php">/about</a>
+          <a class="menu__link" href="contact.php">/contact</a>
+        </nav>
+        <div class="menu__meta">
+          <span data-account-link="">
+            <a href="login.php">login</a>
+          </span>
+          <div class="menu__currency">currency: <button data-currency="USD" aria-pressed="true">usd</button>
+            <button data-currency="EUR" aria-pressed="false">eur</button>
+            <button data-currency="GBP" aria-pressed="false">gbp</button>
+          </div>
+        </div>
+      </div>
+      <main class="page">
+
+
+
+
+
+
+
+        <main class="page">
+          <section class="account-hero t_cap_two">
+            <img fetchpriority="high" class="account-hero__image" src="assets/images/account-vault.jpg" alt=""
+              width="2400" height="1029" data-fade="done">
+            <div class="account-hero__overlay"></div>
+            <div class="wrap account-hero__greeting">
+              <h1 class="heading-1 account-hero__title" data-greeting="" data-reveal="">Hi John.</h1>
+              <ul class="account-stats" data-reveal="">
+                <li class="account-stats__item">
+                  <span class="account-stats__label">products</span>
+                  <span class="account-stats__value" data-count-products="">7</span>
+                </li>
+                <li class="account-stats__item">
+                  <span class="account-stats__label">invoices</span>
+                  <span class="account-stats__value" data-count-invoices="">4</span>
+                </li>
+                <li class="account-stats__item">
+                  <span class="account-stats__label">member since</span>
+                  <span class="account-stats__value" data-member-since="">Mar 2026</span>
+                </li>
+              </ul>
+              <button class="btn btn--outline btn--small account-hero__signout--mobile" type="button" data-signout=""
+                data-reveal="">log out</button>
+            </div>
+            <nav class="wrap account-tabs" aria-label="Account">
+              <div class="account-tabs__bar" data-tab-bar="" data-reveal="">
+                <div class="account-tabs__group">
+                  <a class="tab" href="account-downloads.php">downloads <span class="tab__count"
+                      data-count-products="">7</span>
+                  </a>
+                  <a class="tab" href="account-invoices.php">invoices <span class="tab__count"
+                      data-count-invoices="">4</span>
+                  </a>
+                  <a class="tab" href="account.php" aria-current="page">your details</a>
+                </div>
+                <button class="btn btn--outline btn--small account-tabs__signout" type="button" data-signout="">log
+                  out</button>
+              </div>
+            </nav>
+          </section>
+          <section class="account-body">
+            <div class="wrap account-body__inner">
+              <div class="account-head" data-reveal="">
+                <h2 class="heading-2">Your details</h2>
+              </div>
+              <div class="account-panels" data-reveal="">
+                <form class="account-panel details-panel" data-details-form="profile" novalidate="">
+                  <h3 class="heading-3">Profile</h3>
+                  <div class="form">
+                    <div class="field">
+                      <div class="field__box">
+                        <label class="field__label" for="name">Full name</label>
+                        <input class="field__input" id="name" name="name" type="text" data-rule="required"
+                          autocomplete="name">
+                      </div>
+                      <p class="field__error">Enter your full name</p>
+                    </div>
+                    <div class="field">
+                      <div class="field__box">
+                        <label class="field__label" for="email">Email address</label>
+                        <input class="field__input" id="email" name="email" type="email" data-rule="email"
+                          autocomplete="email">
+                      </div>
+                      <p class="field__error">Enter a valid email address</p>
+                    </div>
+                    <div class="field">
+                      <div class="field__box">
+                        <label class="field__label" for="dob">Date of birth</label>
+                        <input class="field__input" id="dob" name="dob" type="text" data-rule="required"
+                          autocomplete="bday" inputmode="numeric" placeholder="DD/MM/YYYY" maxlength="10" data-dob="">
+                      </div>
+                      <p class="field__error">Enter your date of birth as DD/MM/YYYY</p>
+                    </div>
+                  </div>
+                  <button class="btn btn--dark" type="submit">save profile</button>
+                </form>
+                <form class="account-panel details-panel" data-details-form="billing" novalidate="">
+                  <h3 class="heading-3">Billing address</h3>
+                  <div class="form">
+                    <div class="field">
+                      <div class="field__box">
+                        <label class="field__label" for="address">Address</label>
+                        <input class="field__input" id="address" name="address" type="text" data-rule="required"
+                          autocomplete="street-address">
+                      </div>
+                      <p class="field__error">Enter your address</p>
+                    </div>
+                    <div class="field">
+                      <div class="field__box">
+                        <label class="field__label" for="country">Country</label>
+                        <select class="field__input" id="country" name="country" data-rule="required"
+                          autocomplete="country-name">
+                          <option value="">Choose a country</option>
+                          <option>United Kingdom</option>
+                          <option>Ireland</option>
+                          <option>United States</option>
+                          <option>Canada</option>
+                          <option>Australia</option>
+                          <option>New Zealand</option>
+                          <option>France</option>
+                          <option>Germany</option>
+                          <option>Spain</option>
+                          <option>Italy</option>
+                          <option>Netherlands</option>
+                          <option>Belgium</option>
+                          <option>Portugal</option>
+                          <option>Sweden</option>
+                          <option>Denmark</option>
+                          <option>Norway</option>
+                          <option>Switzerland</option>
+                          <option>United Arab Emirates</option>
+                          <option>India</option>
+                          <option>Singapore</option>
+                          <option>South Africa</option>
+                        </select>
+                      </div>
+                      <p class="field__error">Pick a country</p>
+                    </div>
+                    <div class="field">
+                      <div class="field__box">
+                        <label class="field__label" for="city">City</label>
+                        <input class="field__input" id="city" name="city" type="text" data-rule="required"
+                          autocomplete="address-level2">
+                      </div>
+                      <p class="field__error">Enter your city</p>
+                    </div>
+                    <div class="field">
+                      <div class="field__box">
+                        <label class="field__label" for="postcode">Postcode</label>
+                        <input class="field__input" id="postcode" name="postcode" type="text" data-rule="required"
+                          autocomplete="postal-code">
+                      </div>
+                      <p class="field__error">Enter your postcode</p>
+                    </div>
+                  </div>
+                  <button class="btn btn--dark" type="submit">save billing</button>
+                </form>
+                <form class="account-panel details-panel" data-details-form="password" novalidate="">
+                  <h3 class="heading-3">Password</h3>
+                  <input class="visually-hidden" type="email" name="username" autocomplete="username" tabindex="-1"
+                    aria-hidden="true" data-username="">
+                  <div class="form">
+                    <div class="field field--password">
+                      <div class="field__box">
+                        <label class="field__label" for="current-password">Current password</label>
+                        <input class="field__input" id="current-password" name="current-password" type="password"
+                          data-rule="required" autocomplete="current-password">
+                        <button type="button" class="field__toggle" aria-label="Show password">
+                          <svg class="icon" viewBox="0 0 20 20" aria-hidden="true">
+                            <path d="M1.5 10S4.5 4 10 4s8.5 6 8.5 6-3 6-8.5 6-8.5-6-8.5-6Z"></path>
+                            <circle cx="10" cy="10" r="2.5"></circle>
+                          </svg>
+                        </button>
+                      </div>
+                      <p class="field__error">Enter your current password</p>
+                    </div>
+                    <div class="field field--password">
+                      <div class="field__box">
+                        <label class="field__label" for="new-password">New password</label>
+                        <input class="field__input" id="new-password" name="new-password" type="password"
+                          data-rule="password" autocomplete="new-password">
+                        <button type="button" class="field__toggle" aria-label="Show password">
+                          <svg class="icon" viewBox="0 0 20 20" aria-hidden="true">
+                            <path d="M1.5 10S4.5 4 10 4s8.5 6 8.5 6-3 6-8.5 6-8.5-6-8.5-6Z"></path>
+                            <circle cx="10" cy="10" r="2.5"></circle>
+                          </svg>
+                        </button>
+                      </div>
+                      <p class="field__error">Use at least 10 characters</p>
+                    </div>
+                  </div>
+                  <button class="btn btn--dark" type="submit">update password</button>
+                </form>
+              </div>
+              <div class="account-panel close-account">
+                <div class="close-account__text">
+                  <h3 class="heading-4">Close your account</h3>
+                  <p class="close-account__body dif_bottom_mob">Your downloads and invoices go with it. Download anything you want to
+                    keep first.</p>
+                </div>
+                <a class="close-account__link"
+                  href="mailto:support@desertdigitals.com?subject=Close%20my%20account">close account</a>
+              </div>
+            </div>
+          </section>
+        </main>
+
+      </main>
+      <footer class="site-footer">
+        <div class="wrap">
+          <div class="site-footer__grid">
+            <div class="site-footer__about">
+              <a class="logo" href="index.php" aria-label="desertdigitals home">
+                <img src="assets/logos/mark-amber.svg" alt="" width="28" height="28"><span>desertdigitals</span>
+              </a>
+              <p>
+                <span class="site-footer__copy-full">Products for web developers. Video courses, e-books, software,
+                  templates and 1 on 1 time with a developer.</span>
+                <span class="site-footer__copy-short">Products for web developers. E-books, courses, software,
+                  templates and 1 on 1 time with a developer.</span>
+              </p>
+              <a class="site-footer__mail" href="mailto:support@desertdigitals.com">support@desertdigitals.com</a>
+            </div>
+            <div class="site-footer__col">
+              <h2>// shop</h2><a href="store.php">Products</a><a href="one-on-one.php">1 on 1</a>
+            </div>
+            <div class="site-footer__col">
+              <h2>// company</h2><a href="about.php">About us</a><a href="contact.php">Contact us</a>
+            </div>
+            <div class="site-footer__col">
+              <h2>// account</h2><a href="login.php">Log in</a><a href="sign-up.php">Sign up</a>
+            </div>
+            <div class="site-footer__col">
+              <h2>// legal</h2><a href="terms.php">Terms and conditions</a><a href="privacy.php">Privacy policy</a>
+            </div>
+          </div>
+          <div class="site-footer__bottom">
+            <span>
+              <span class="site-footer__copy-full">© 2026 desertdigitals. All rights reserved.</span>
+              <span class="site-footer__copy-short">© 2026 desertdigitals</span>
+            </span>
+            <div class="payment-logos" aria-label="We accept Visa and Mastercard">
+              <span><img src="assets/images/visa.svg" alt="Visa" width="32" height="10" loading="lazy"
+                  decoding="async"></span>
+              <span><img src="assets/images/mastercard.svg" alt="Mastercard" width="30" height="18" loading="lazy"
+                  decoding="async"></span></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="uiframe/js/jquery.min.js"></script>
+    <script src="uiframe/js/bootstrap.bundle.min.js"></script>
+    <script src="uiframe/js/popper.min.js"></script>
+    <script src="uiframe/js/slick.js"></script>
+    <script src="uiframe/js/owl.carousel.js"></script>
+    <script src="uiframe/js/swiper-bundle.min.js"></script>
+    <script src="uiframe/js/flickity.pkgd.min.js"></script>
+    <script src="uiframe/js/aos.js"></script>
+    <script src="./uiframe/js/home-js.js"></script>
+    <script src="assets/data/catalogue.js"></script>
+    <script src="assets/js/store.js"></script>
+    <script src="assets/js/partials.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script src="assets/js/pages/home.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#menuBtn").click(function () {
+          $(this).toggleClass("is-active");
+          $("#nav").toggleClass("header-is-active");
+        });
+      });
+    </script>
+    <script>
+      const menuBtn = document.querySelector('#menuBtn');
+      const nav = document.querySelector('#nav');
+      const mmenu = document.querySelector('#mmenu');
+
+      menuBtn.addEventListener('click', function () {
+        menuBtn.classList.toggle('active');
+        nav.classList.toggle('menu-on');
+        mmenu.classList.toggle('open');
+        document.body.classList.toggle('menu-open');
+      });
+    </script>
+    <script>
+      window.addEventListener('scroll', function () {
+        var content = document.querySelector('header');
+        var scrollPosition = window.scrollY;
+        if (scrollPosition > 100) {
+          content.classList.add("header-scroll", "solid")
+        } else {
+          content.classList.remove("header-scroll", "solid")
+        }
+      });
+    </script>
+    <script>
+
+    </script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+
+  </html>

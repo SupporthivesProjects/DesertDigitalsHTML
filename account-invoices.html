@@ -1,0 +1,300 @@
+
+<!doctype php>
+<php lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desertdigitals</title>
+    <link rel="icon" href="./assets/logos/mark-amber.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/devcss/mainBase.css">
+  </head>
+  <body>
+  <div class="main-div">
+    <header class="site-header is-solid" data-header="">
+      <a class="logo" href="index.php" aria-label="desertdigitals home">
+        <img src="./assets/logos/mark-amber.svg" alt="" width="28" height="28"><span>desertdigitals</span>
+      </a>
+        <nav class="site-nav" aria-label="Main"><a class="site-nav__link" href="store.php">/products</a><a class="site-nav__link" href="one-on-one.php">/one-on-one</a><a class="site-nav__link" href="about.php">/about</a><a class="site-nav__link" href="contact.php">/contact</a></nav>
+        <div class="site-header__right">
+          <div class="currency site-header__hide-mobile" data-currency-select="">
+            <button class="currency__button" aria-haspopup="listbox" aria-expanded="false">
+              <span data-currency-label="">usd</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+            </button>
+            <ul class="currency__list" role="listbox" aria-label="Currency">
+              <li>
+                <button class="currency__option" role="option" data-currency="USD" aria-selected="true">
+                  usd<span>$</span>
+                </button>
+              </li>
+              <li>
+                <button class="currency__option" role="option" data-currency="EUR" aria-selected="false">
+                  eur<span>€</span>
+                </button>
+              </li>
+              <li>
+                <button class="currency__option" role="option" data-currency="GBP" aria-selected="false">
+                  gbp<span>£</span>
+                </button>
+              </li>
+              <li>
+                <button class="currency__option" role="option" data-currency="USD" aria-selected="true">
+                  usd<span>$</span>
+                </button>
+              </li>
+              <li>
+                <button class="currency__option" role="option" data-currency="EUR" aria-selected="false">
+                  eur<span>€</span>
+                </button>
+              </li>
+              <li>
+                <button class="currency__option" role="option" data-currency="GBP" aria-selected="false">
+                  gbp<span>£</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <span class="site-header__hide-mobile" data-account-link=""><a href="login.php">login</a></span>
+          <a href="cart.php">cart(<span class="cart-count" data-cart-count="">0</span>)</a>
+          <button class="burger" aria-label="Open menu" aria-expanded="false" data-menu-open=""><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18M9 16h12"></path></svg></button>
+        </div>
+    </header>
+    <div class="menu" id="menu" aria-hidden="true" role="dialog" aria-label="Menu">
+      <div class="menu__top">
+        <a class="logo" href="index.php" aria-label="desertdigitals home">
+          <img src="assets/logos/mark-amber.svg" alt="" width="28" height="28">
+          <span>desertdigitals</span>
+        </a>
+        <button class="menu__close" data-menu-close="">close <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18"></path>
+          </svg>
+        </button>
+      </div>
+      <nav class="menu__nav" aria-label="Mobile">
+        <a class="menu__link" href="store.php" aria-current="page">/products</a>
+        <a class="menu__link" href="one-on-one.php">/one-on-one</a>
+        <a class="menu__link" href="about.php">/about</a>
+        <a class="menu__link" href="contact.php">/contact</a>
+      </nav>
+      <div class="menu__meta">
+        <span data-account-link="">
+          <a href="login.php">login</a>
+        </span>
+        <div class="menu__currency">currency: <button data-currency="USD" aria-pressed="true">usd</button>
+          <button data-currency="EUR" aria-pressed="false">eur</button>
+          <button data-currency="GBP" aria-pressed="false">gbp</button>
+        </div>
+      </div>
+    </div>
+<main  class="page">
+
+  
+
+  <section class="account-hero t_cap_two">
+    <img fetchpriority="high" class="account-hero__image" src="assets/images/account-vault.jpg" alt="" width="2400" height="1029" data-fade="done">
+    <div class="account-hero__overlay"></div>
+    <div class="wrap account-hero__greeting">
+      <h1 class="heading-1 account-hero__title" data-greeting="" data-reveal="">Hi John.</h1>
+      <ul class="account-stats" data-reveal="">
+        <li class="account-stats__item">
+          <span class="account-stats__label">products</span>
+          <span class="account-stats__value" data-count-products="">7</span>
+        </li>
+        <li class="account-stats__item">
+          <span class="account-stats__label">invoices</span>
+          <span class="account-stats__value" data-count-invoices="">4</span>
+        </li>
+        <li class="account-stats__item">
+          <span class="account-stats__label">member since</span>
+          <span class="account-stats__value" data-member-since="">Mar 2026</span>
+        </li>
+      </ul>
+      <button class="btn btn--outline btn--small account-hero__signout--mobile" type="button" data-signout="" data-reveal="">log out</button>
+    </div>
+    <nav class="wrap account-tabs" aria-label="Account">
+      <div class="account-tabs__bar" data-tab-bar="" data-reveal="">
+        <div class="account-tabs__group">
+          <a class="tab" href="account-downloads.php">downloads <span class="tab__count" data-count-products="">7</span>
+          </a>
+          <a class="tab" href="account-invoices.php" aria-current="page">invoices <span class="tab__count" data-count-invoices="">4</span>
+          </a>
+          <a class="tab" href="account.php">your details</a>
+        </div>
+        <button class="btn btn--outline btn--small account-tabs__signout" type="button" data-signout="">log out</button>
+      </div>
+    </nav>
+  </section>
+  <section class="account-body">
+    <div class="wrap account-body__inner">
+      <div class="account-head" data-reveal="">
+        <h2 class="heading-2">Invoices</h2>
+      </div>
+      <div class="account-panel ledger" data-ledger="" data-reveal="">
+        <div class="ledger__columns" aria-hidden="true">
+          <span>reference</span>
+          <span>date</span>
+          <span>products</span>
+          <span>total</span>
+          <span></span>
+        </div>
+        <div data-invoice-rows="">
+          <div class="invoice-row">
+            <div class="invoice-row__top">
+              <span class="invoice-row__ref">DD-10482</span>
+              <span class="price">$44.96</span>
+            </div>
+            <span class="invoice-row__date">14 Oct 2026</span>
+            <div class="invoice-row__products">
+              <span>Learning Gutenberg, WP Video Focus, Website Creation and Design</span>
+              <span class="invoice-row__code">WELCOME10 applied</span>
+            </div>
+            <div class="invoice-row__actions">
+              <button class="btn btn--outline btn--small" type="button" data-invoice="DD-10482">download pdf</button>
+            </div>
+          </div>
+          <div class="invoice-row">
+            <div class="invoice-row__top">
+              <span class="invoice-row__ref">DD-10391</span>
+              <span class="price">$19.96</span>
+            </div>
+            <span class="invoice-row__date">30 Sep 2026</span>
+            <div class="invoice-row__products">
+              <span>Kickstart Genesis Framework WP Theme</span>
+            </div>
+            <div class="invoice-row__actions">
+              <button class="btn btn--outline btn--small" type="button" data-invoice="DD-10391">download pdf</button>
+            </div>
+          </div>
+          <div class="invoice-row">
+            <div class="invoice-row__top">
+              <span class="invoice-row__ref">DD-10277</span>
+              <span class="price">$29.87</span>
+            </div>
+            <span class="invoice-row__date">12 Sep 2026</span>
+            <div class="invoice-row__products">
+              <span>HTML 101 Kickstart</span>
+            </div>
+            <div class="invoice-row__actions">
+              <button class="btn btn--outline btn--small" type="button" data-invoice="DD-10277">download pdf</button>
+            </div>
+          </div>
+          <div class="invoice-row">
+            <div class="invoice-row__top">
+              <span class="invoice-row__ref">DD-10154</span>
+              <span class="price">$134.11</span>
+            </div>
+            <span class="invoice-row__date">21 Aug 2026</span>
+            <div class="invoice-row__products">
+              <span>Web Design Blunders, Simple PHP Scripts</span>
+            </div>
+            <div class="invoice-row__actions">
+              <button class="btn btn--outline btn--small" type="button" data-invoice="DD-10154">download pdf</button>
+            </div>
+          </div>
+        </div>
+        <div class="ledger__summary">
+          <span data-invoice-summary="">4 invoices since Mar 2026</span>
+          <span data-invoice-total="">$228.90 in total</span>
+        </div>
+      </div>
+      <div class="account-panel account-empty" data-empty="" hidden="">
+        <h3 class="heading-2">No invoices yet</h3>
+        <p class="account-empty__body">Every order you place adds an invoice here, ready to download.</p>
+        <a class="btn btn--dark" href="store.php">browse the store</a>
+      </div>
+    </div>
+  </section>
+        </main>
+        <footer class="site-footer">
+            <div class="wrap">
+                <div class="site-footer__grid">
+                    <div class="site-footer__about">
+                        <a class="logo" href="index.php" aria-label="desertdigitals home">
+                            <img src="assets/logos/mark-amber.svg" alt="" width="28" height="28"><span>desertdigitals</span>
+                        </a>
+                    <p>
+                        <span class="site-footer__copy-full">Products for web developers. Video courses, e-books, software,
+                        templates and 1 on 1 time with a developer.</span>
+                        <span class="site-footer__copy-short">Products for web developers. E-books, courses, software,
+                        templates and 1 on 1 time with a developer.</span>
+                    </p>
+                    <a class="site-footer__mail" href="mailto:support@desertdigitals.com">support@desertdigitals.com</a>
+                    </div>
+                    <div class="site-footer__col">
+                    <h2>// shop</h2><a href="store.php">Products</a><a href="one-on-one.php">1 on 1</a>
+                    </div>
+                    <div class="site-footer__col">
+                    <h2>// company</h2><a href="about.php">About us</a><a href="contact.php">Contact us</a>
+                    </div>
+                    <div class="site-footer__col">
+                    <h2>// account</h2><a href="login.php">Log in</a><a href="sign-up.php">Sign up</a>
+                    </div>
+                    <div class="site-footer__col">
+                    <h2>// legal</h2><a href="terms.php">Terms and conditions</a><a href="privacy.php">Privacy policy</a>
+                    </div>
+                </div>
+                <div class="site-footer__bottom">
+                <span>
+                    <span class="site-footer__copy-full">© 2026 desertdigitals. All rights reserved.</span>
+                    <span class="site-footer__copy-short">© 2026 desertdigitals</span>
+                </span>
+                <div class="payment-logos" aria-label="We accept Visa and Mastercard">
+                    <span><img src="assets/images/visa.svg" alt="Visa" width="32" height="10" loading="lazy" decoding="async"></span>
+                    <span><img src="assets/images/mastercard.svg" alt="Mastercard" width="30" height="18" loading="lazy" decoding="async"></span></div>
+                </div>
+            </div>
+        </footer>
+        </div>
+        <script src="uiframe/js/jquery.min.js"></script>
+        <script src="uiframe/js/bootstrap.bundle.min.js"></script>
+        <script src="uiframe/js/popper.min.js"></script>
+        <script src="uiframe/js/slick.js"></script>
+        <script src="uiframe/js/owl.carousel.js"></script>
+        <script src="uiframe/js/swiper-bundle.min.js"></script>
+        <script src="uiframe/js/flickity.pkgd.min.js"></script>   
+        <script src="uiframe/js/aos.js"></script>
+        <script src="./uiframe/js/home-js.js"></script>
+        <script src="assets/data/catalogue.js"></script>
+        <script src="assets/js/store.js"></script>
+        <script src="assets/js/partials.js"></script>
+        <script src="assets/js/ui.js"></script>
+        <script src="assets/js/pages/home.js"></script>
+        <script>
+            $(document).ready(function () {
+            $("#menuBtn").click(function () {
+                $(this).toggleClass("is-active");
+                $("#nav").toggleClass("header-is-active");
+            });
+        });
+        </script>
+        <script>
+            const menuBtn = document.querySelector('#menuBtn');
+            const nav = document.querySelector('#nav');
+            const mmenu = document.querySelector('#mmenu');
+
+            menuBtn.addEventListener('click', function () {
+                menuBtn.classList.toggle('active');
+                nav.classList.toggle('menu-on');
+                mmenu.classList.toggle('open');
+                document.body.classList.toggle('menu-open');
+            });
+        </script>
+        <script>
+        window.addEventListener('scroll', function() {
+            var content = document.querySelector('header');
+            var scrollPosition = window.scrollY;
+            if (scrollPosition > 100) {
+                content.classList.add("header-scroll", "solid")
+            } else {
+                content.classList.remove("header-scroll", "solid")
+            }
+        });
+        </script>
+        <script>
+          
+        </script>
+        <script>
+        AOS.init();
+        </script>
+   </body>
+    </html>

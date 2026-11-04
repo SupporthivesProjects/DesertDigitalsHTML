@@ -100,13 +100,13 @@
   .ledger__summary{flex-direction:column;gap:0;padding:24px;border-top:0}
 
   .library{grid-template-columns:1fr;gap:24px}
-  .download-card{display:grid;grid-template-columns:88px minmax(0,1fr);gap:16px;align-items:start;overflow:visible;background:none}
+  /* .download-card{display:grid;grid-template-columns:88px minmax(0,1fr);gap:16px;align-items:start;overflow:visible;background:none}
   .download-card__cover{width:88px;height:116px;border-radius:var(--radius)}
   .download-card > a:first-child{border-radius:var(--radius)}
   .download-card__text{background:var(--color-white);border-radius:var(--radius-m)}
   .download-card__meta{flex-direction:column}
   .download-card__dot{display:none}
-  .download-card .btn{margin-top:0}
+  .download-card .btn{margin-top:0} */
   .find-more{gap:16px;padding:32px 24px 32px}
 
   .account-empty{padding:40px 24px}

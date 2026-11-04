@@ -1,0 +1,119 @@
+.desktop_nonet {
+    display: none;
+}
+
+.mobile_nonet {
+    display: block;
+}
+.account-head__lead {
+    max-width: 616px;
+     width: 100%;
+}
+.tirthaks_section .download-card__title{
+    font-size: 20px;
+    text-wrap: unset;
+}
+.re_download_t {
+    background: var(--base-04, #E9E9E9);
+    color: var(--brand-warm-black, #15110C);
+
+
+}
+.download_ready_t {
+        background: var(--brand-amber, #E9B872);
+        color: var(--brand-warm-black, #15110C);
+
+}
+.tirthaks_section .download-card__meta {
+    --ink-60: rgba(21, 17, 12, .5);
+}
+.tirthaks_section .account-empty {
+    padding: 56px;
+}
+.tirthaks_section .account-empty__body {
+    --sand-66: rgba(243, 230, 208, .68);
+}
+
+@media only screen and (max-width: 700px) {
+    .mobile_nonet {
+        display: none;
+    }
+
+    .desktop_nonet {
+        display: block;
+    }
+
+    .dif_bottom_mob {
+        margin-bottom: 45px;
+    }
+    .account-head__lead {
+        max-width: unset;
+        width: 100%;
+    }
+    .no_gap_mobile {
+        gap: 0px;
+    }
+    .dif_gap_t {
+        gap: 24px;
+        padding: 32px 24px;
+    }
+    .download-card__cover {
+        height: 232px;
+    }
+    
+    .account-empty {
+        padding: 40px 24px;
+
+    }
+    .library > article:nth-child(4n) {
+        margin-bottom: 16px;
+    }
+    .t_cap_two .account-tabs__bar {
+        border-radius: 16px 16px 0 0;
+    }
+    .tab__count {
+        font-size: 13px;
+    }
+
+    
+}
+
+@media only screen and (min-width: 780px) and (max-width:991px) {
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1151px) {
+    
+}
+
+@media only screen and (min-width: 1152px) and (max-width:1279px) {
+
+}
+
+@media only screen and (min-width: 1280px) and (max-width:1348px) {
+    
+}
+
+@media only screen and (min-width: 1349px) and (max-width:1439px) {
+    
+}
+
+@media only screen and (min-width: 1440px) and (max-width:1499px) {
+    
+}
+
+@media only screen and (min-width: 1500px) and (max-width:1599px) {
+    
+}
+
+@media only screen and (min-width: 1600px) and (max-width:1699px) {
+    
+}
+
+@media only screen and (min-width: 1700px) and (max-width:1799px) {
+    
+}
+
+@media only screen and (min-width: 1800px) and (max-width:1919px) {
+    
+}
