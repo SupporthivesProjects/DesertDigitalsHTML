@@ -501,7 +501,15 @@
         </div>
         <p class="store__empty" data-empty="" hidden="">No products match these filters. <button class="text-link" data-clear="">Clear filters</button>
         </p>
-        <nav class="pagination store__pagination" data-pagination="" aria-label="Pages" hidden=""></nav>
+        <nav class="pagination store__pagination" data-pagination="" aria-label="Pages">
+          <button class="pagination__item" data-page="0" aria-label="Previous page" disabled="">&lt;</button>
+          <button class="pagination__item" data-page="1" aria-current="page">1</button>
+          <button class="pagination__item" data-page="2">2</button>
+          <button class="pagination__item" data-page="3">3</button>
+          <span class="pagination__gap">…</span>
+          <button class="pagination__item" data-page="10">10</button>
+          <button class="pagination__item" data-page="2" aria-label="Next page">&gt;</button>
+        </nav>
         <p class="store__footnote mono" data-footnote="">11 of 26 videos match Design, HTML and CSS</p>
       </div>
     </div>
