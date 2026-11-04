@@ -1,0 +1,173 @@
+<?php include 'includes/header.php'; ?>
+
+  <main class="page">
+  <section class="account-hero">
+    <img fetchpriority="high" class="account-hero__image" src="assets/images/account-vault.jpg" alt="" width="2400" height="1029" data-fade="done">
+    <div class="account-hero__overlay"></div>
+    <div class="wrap account-hero__greeting">
+      <h1 class="heading-1 account-hero__title" data-greeting="" data-reveal="">Hi John.</h1>
+      <ul class="account-stats" data-reveal="">
+        <li class="account-stats__item">
+          <span class="account-stats__label">products</span>
+          <span class="account-stats__value" data-count-products="">7</span>
+        </li>
+        <li class="account-stats__item">
+          <span class="account-stats__label">invoices</span>
+          <span class="account-stats__value" data-count-invoices="">4</span>
+        </li>
+        <li class="account-stats__item">
+          <span class="account-stats__label">member since</span>
+          <span class="account-stats__value" data-member-since="">Mar 2026</span>
+        </li>
+      </ul>
+      <button class="btn btn--outline btn--small account-hero__signout--mobile" type="button" data-signout="" data-reveal="">log out</button>
+    </div>
+    <nav class="wrap account-tabs" aria-label="Account">
+      <div class="account-tabs__bar" data-tab-bar="" data-reveal="">
+        <div class="account-tabs__group">
+          <a class="tab" href="account-downloads.php">downloads <span class="tab__count" data-count-products="">7</span>
+          </a>
+          <a class="tab" href="account-invoices.php">invoices <span class="tab__count" data-count-invoices="">4</span>
+          </a>
+          <a class="tab" href="account.php" aria-current="page">your details</a>
+        </div>
+        <button class="btn btn--outline btn--small account-tabs__signout" type="button" data-signout="">log out</button>
+      </div>
+    </nav>
+  </section>
+  <section class="account-body">
+    <div class="wrap account-body__inner">
+      <div class="account-head" data-reveal="">
+        <h2 class="heading-2">Your details</h2>
+      </div>
+      <div class="account-panels" data-reveal="">
+        <form class="account-panel details-panel" data-details-form="profile" novalidate="">
+          <h3 class="heading-3">Profile</h3>
+          <div class="form">
+            <div class="field">
+              <div class="field__box">
+                <label class="field__label" for="name">Full name</label>
+                <input class="field__input" id="name" name="name" type="text" data-rule="required" autocomplete="name">
+              </div>
+              <p class="field__error">Enter your full name</p>
+            </div>
+            <div class="field">
+              <div class="field__box">
+                <label class="field__label" for="email">Email address</label>
+                <input class="field__input" id="email" name="email" type="email" data-rule="email" autocomplete="email">
+              </div>
+              <p class="field__error">Enter a valid email address</p>
+            </div>
+            <div class="field">
+              <div class="field__box">
+                <label class="field__label" for="dob">Date of birth</label>
+                <input class="field__input" id="dob" name="dob" type="text" data-rule="required" autocomplete="bday" inputmode="numeric" placeholder="DD/MM/YYYY" maxlength="10" data-dob="">
+              </div>
+              <p class="field__error">Enter your date of birth as DD/MM/YYYY</p>
+            </div>
+          </div>
+          <button class="btn btn--dark" type="submit">save profile</button>
+        </form>
+        <form class="account-panel details-panel" data-details-form="billing" novalidate="">
+          <h3 class="heading-3">Billing address</h3>
+          <div class="form">
+            <div class="field">
+              <div class="field__box">
+                <label class="field__label" for="address">Address</label>
+                <input class="field__input" id="address" name="address" type="text" data-rule="required" autocomplete="street-address">
+              </div>
+              <p class="field__error">Enter your address</p>
+            </div>
+            <div class="field">
+              <div class="field__box">
+                <label class="field__label" for="country">Country</label>
+                <select class="field__input" id="country" name="country" data-rule="required" autocomplete="country-name">
+                  <option value="">Choose a country</option>
+                  <option>United Kingdom</option>
+                  <option>Ireland</option>
+                  <option>United States</option>
+                  <option>Canada</option>
+                  <option>Australia</option>
+                  <option>New Zealand</option>
+                  <option>France</option>
+                  <option>Germany</option>
+                  <option>Spain</option>
+                  <option>Italy</option>
+                  <option>Netherlands</option>
+                  <option>Belgium</option>
+                  <option>Portugal</option>
+                  <option>Sweden</option>
+                  <option>Denmark</option>
+                  <option>Norway</option>
+                  <option>Switzerland</option>
+                  <option>United Arab Emirates</option>
+                  <option>India</option>
+                  <option>Singapore</option>
+                  <option>South Africa</option>
+                </select>
+              </div>
+              <p class="field__error">Pick a country</p>
+            </div>
+            <div class="field">
+              <div class="field__box">
+                <label class="field__label" for="city">City</label>
+                <input class="field__input" id="city" name="city" type="text" data-rule="required" autocomplete="address-level2">
+              </div>
+              <p class="field__error">Enter your city</p>
+            </div>
+            <div class="field">
+              <div class="field__box">
+                <label class="field__label" for="postcode">Postcode</label>
+                <input class="field__input" id="postcode" name="postcode" type="text" data-rule="required" autocomplete="postal-code">
+              </div>
+              <p class="field__error">Enter your postcode</p>
+            </div>
+          </div>
+          <button class="btn btn--dark" type="submit">save billing</button>
+        </form>
+        <form class="account-panel details-panel" data-details-form="password" novalidate="">
+          <h3 class="heading-3">Password</h3>
+          <input class="visually-hidden" type="email" name="username" autocomplete="username" tabindex="-1" aria-hidden="true" data-username="">
+          <div class="form">
+            <div class="field field--password">
+              <div class="field__box">
+                <label class="field__label" for="current-password">Current password</label>
+                <input class="field__input" id="current-password" name="current-password" type="password" data-rule="required" autocomplete="current-password">
+                <button type="button" class="field__toggle" aria-label="Show password">
+                  <svg class="icon" viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M1.5 10S4.5 4 10 4s8.5 6 8.5 6-3 6-8.5 6-8.5-6-8.5-6Z"></path>
+                    <circle cx="10" cy="10" r="2.5"></circle>
+                  </svg>
+                </button>
+              </div>
+              <p class="field__error">Enter your current password</p>
+            </div>
+            <div class="field field--password">
+              <div class="field__box">
+                <label class="field__label" for="new-password">New password</label>
+                <input class="field__input" id="new-password" name="new-password" type="password" data-rule="password" autocomplete="new-password">
+                <button type="button" class="field__toggle" aria-label="Show password">
+                  <svg class="icon" viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M1.5 10S4.5 4 10 4s8.5 6 8.5 6-3 6-8.5 6-8.5-6-8.5-6Z"></path>
+                    <circle cx="10" cy="10" r="2.5"></circle>
+                  </svg>
+                </button>
+              </div>
+              <p class="field__error">Use at least 10 characters</p>
+            </div>
+          </div>
+          <button class="btn btn--dark" type="submit">update password</button>
+        </form>
+      </div>
+      <div class="account-panel close-account">
+        <div class="close-account__text">
+          <h3 class="heading-4">Close your account</h3>
+          <p class="close-account__body">Your downloads and invoices go with it. Download anything you want to keep first.</p>
+        </div>
+        <a class="close-account__link" href="mailto:support@desertdigitals.com?subject=Close%20my%20account">close account</a>
+      </div>
+    </div>
+  </section>
+</main>
+   
+<?php include 'includes/footer.php'; ?>

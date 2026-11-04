@@ -1,0 +1,6 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icons/error">
+<path id="icon / cross" d="M32 63C49.1208 63 63 49.1208 63 32C63 14.8792 49.1208 1 32 1C14.8792 1 1 14.8792 1 32C1 49.1208 14.8792 63 32 63Z" fill="#DF3F3F"/>
+<path id="icon / cross_2" d="M23 23L41 41M41 23L23 41" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+</g>
+</svg>

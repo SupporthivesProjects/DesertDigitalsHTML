@@ -1,0 +1,18 @@
+
+.mmenu.open {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.35s var(--ease);
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+ol, ul {
+    padding-left: 0rem;
+}
+.links a sup {
+    margin-top: 7px;
+
+}
