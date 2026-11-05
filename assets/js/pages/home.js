@@ -5,7 +5,6 @@
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const SOURCE_TEXT = 'const dune=()=>{return<Sand/>};export default function Desert(){let wind=0.8;' +
     'for(i of layers){i.shift(wind)}}npm run build;git push origin main;<div class="ridge"></div>if(ready)ship();';
-  const FAVOURITES = ['learning-gutenberg', 'website-creation-and-design', 'wp-video-focus', 'kickstart-genesis-framework-wp-theme'];
   const TERMINAL_PRODUCT = 'learning-gutenberg';
   const MONO_FONT = 'px "Fira Code",monospace';
   const AMBER = '233,184,114';
@@ -383,39 +382,83 @@
     addEventListener('resize', () => { size(); draw(); });
   }
 
-  /* favourites */
-  const favourites = $('[data-favourites]'), dots = $('[data-dots]');
-  FAVOURITES.map(DD.product).filter(Boolean).forEach((product, i) => {
-    const holder = document.createElement('div');
-    holder.innerHTML = DD.ui.productCard(product);
-    const card = holder.firstElementChild;
-    card.classList.add('reveal');
-    card.style.setProperty('--d', (i * 0.08) + 's');
-    const media = card.querySelector('.product-card__media');
-    const img = media.querySelector('img');
-    img.loading = 'eager';
-    img.hidden = true;
-    const canvas = document.createElement('canvas');
-    canvas.className = 'product-card__lens';
-    media.removeAttribute('tabindex');
-    media.style.top = '0';
-    media.style.height = '100%';
-    media.appendChild(canvas);
-    favourites.appendChild(card);
-    lensCover(canvas, img);
-    const dot = document.createElement('i');
-    if (!i) dot.className = 'is-current';
-    dots.appendChild(dot);
-  });
-  favourites.addEventListener('scroll', () => {
-    const left = favourites.getBoundingClientRect().left;
-    let best = 0, bestDistance = 1e9;
-    [...favourites.children].forEach((card, i) => {
-      const distance = Math.abs(card.getBoundingClientRect().left - left);
-      if (distance < bestDistance) { bestDistance = distance; best = i; }
+
+/* favourites - cards are already in HTML */
+const favourites = $('[data-favourites]');
+const dots = $('[data-dots]');
+
+if (favourites) {
+    const cards = [...favourites.querySelectorAll('.product-card')];
+
+    cards.forEach((card, i) => {
+        const media = card.querySelector('.product-card__media');
+        const img = media?.querySelector('img');
+
+        if (!media || !img) return;
+
+        // Set animation delay
+        card.classList.add('reveal');
+        card.style.setProperty('--d', (i * 0.08) + 's');
+
+        // Prepare image
+        img.loading = 'eager';
+        img.hidden = true;
+
+        // Avoid duplicate canvases
+        let canvas = media.querySelector('.product-card__lens');
+
+        if (!canvas) {
+            canvas = document.createElement('canvas');
+            canvas.className = 'product-card__lens';
+            media.appendChild(canvas);
+        }
+
+        media.removeAttribute('tabindex');
+        media.style.top = '0';
+        media.style.height = '100%';
+
+        // Initialize image lens effect
+        lensCover(canvas, img);
     });
-    [...dots.children].forEach((dot, i) => dot.classList.toggle('is-current', i === best));
-  }, { passive: true });
+
+    // Generate navigation dots from existing cards
+    if (dots) {
+        dots.innerHTML = '';
+
+        cards.forEach((card, i) => {
+            const dot = document.createElement('i');
+
+            if (i === 0) dot.classList.add('is-current');
+
+            dots.appendChild(dot);
+        });
+    }
+
+    // Update active dot on horizontal scroll
+    favourites.addEventListener('scroll', () => {
+        if (!dots) return;
+
+        const left = favourites.getBoundingClientRect().left;
+        let best = 0;
+        let bestDistance = Infinity;
+
+        cards.forEach((card, i) => {
+            const distance = Math.abs(
+                card.getBoundingClientRect().left - left
+            );
+
+            if (distance < bestDistance) {
+                bestDistance = distance;
+                best = i;
+            }
+        });
+
+        [...dots.children].forEach((dot, i) => {
+            dot.classList.toggle('is-current', i === best);
+        });
+    }, { passive: true });
+}
+
 
   $('[data-rate]').dataset.usd = DD.oneOnOneRate;
 

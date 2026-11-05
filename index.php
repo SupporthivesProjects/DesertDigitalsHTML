@@ -20,7 +20,64 @@
         <div><span class="label reveal">favourites</span><h2 class="heading-2 reveal-lines"><span class="line"><span>Our favourite products</span></span></h2></div>
         <a href="store.html" class="link-arrow reveal">view all products</a>
       </div>
-      <div class="home-favourites" data-favourites></div>
+      <div class="home-favourites" data-favourites="" data-reveal="">
+          <article class="product-card reveal is-in" style="--d: 0s;">
+              <a class="product-card__media" href="product.html?id=learning-gutenberg" aria-hidden="true" style="top: 0px; height: 100%;"><img src="assets/products/learning-gutenberg.jpg" alt="" loading="eager" decoding="async" width="1200" height="1615" hidden="">
+                  <canvas class="product-card__lens" width="684" height="912"></canvas>
+              </a><span class="pill">video</span>
+              <div class="product-card__body">
+                  <div class="product-card__text">
+                      <h3 class="product-card__title"><a href="product.html?id=learning-gutenberg">Learning Gutenberg</a></h3>
+                      <p class="product-card__summary">The block editor from your first block to a full page layout.</p>
+                  </div>
+                  <div class="product-card__row"><span class="price" data-usd="15">$15.00</span>
+                      <button class="btn btn--primary btn--small" data-add="learning-gutenberg" aria-label="add to cart: Learning Gutenberg">add to cart</button>
+                  </div>
+              </div>
+          </article>
+          <article class="product-card reveal is-in" style="--d: 0.08s;">
+              <a class="product-card__media" href="product.html?id=website-creation-and-design" aria-hidden="true" style="top: 0px; height: 100%;"><img src="assets/products/website-creation-and-design.jpg" alt="" loading="eager" decoding="async" width="1200" height="1615" hidden="">
+                  <canvas class="product-card__lens" width="684" height="912"></canvas>
+              </a><span class="pill">e-book</span>
+              <div class="product-card__body">
+                  <div class="product-card__text">
+                      <h3 class="product-card__title"><a href="product.html?id=website-creation-and-design">Website Creation and Design</a></h3>
+                      <p class="product-card__summary">How to choose a website design that fits the business behind it.</p>
+                  </div>
+                  <div class="product-card__row"><span class="price" data-usd="16.24">$16.24</span>
+                      <button class="btn btn--primary btn--small" data-add="website-creation-and-design" aria-label="add to cart: Website Creation and Design">add to cart</button>
+                  </div>
+              </div>
+          </article>
+          <article class="product-card reveal is-in" style="--d: 0.16s;">
+              <a class="product-card__media" href="product.html?id=wp-video-focus" aria-hidden="true" style="top: 0px; height: 100%;"><img src="assets/products/wp-video-focus.jpg" alt="" loading="eager" decoding="async" width="1200" height="1615" hidden="">
+                  <canvas class="product-card__lens" width="684" height="912"></canvas>
+              </a><span class="pill">software</span>
+              <div class="product-card__body">
+                  <div class="product-card__text">
+                      <h3 class="product-card__title"><a href="product.html?id=wp-video-focus">WP Video Focus</a></h3>
+                      <p class="product-card__summary">Clips your video and pins it to any corner of the page.</p>
+                  </div>
+                  <div class="product-card__row"><span class="price" data-usd="18.72">$18.72</span>
+                      <button class="btn btn--primary btn--small" data-add="wp-video-focus" aria-label="add to cart: WP Video Focus">add to cart</button>
+                  </div>
+              </div>
+          </article>
+          <article class="product-card reveal is-in" style="--d: 0.24s;">
+              <a class="product-card__media" href="product.html?id=kickstart-genesis-framework-wp-theme" aria-hidden="true" style="top: 0px; height: 100%;"><img src="assets/products/kickstart-genesis-framework-wp-theme.jpg" alt="" loading="eager" decoding="async" width="1200" height="1615" hidden="">
+                  <canvas class="product-card__lens" width="684" height="912"></canvas>
+              </a><span class="pill">template</span>
+              <div class="product-card__body">
+                  <div class="product-card__text">
+                      <h3 class="product-card__title"><a href="product.html?id=kickstart-genesis-framework-wp-theme">Kickstart Genesis Framework WP Theme</a></h3>
+                      <p class="product-card__summary">A Genesis Framework theme, ready to adapt into your site.</p>
+                  </div>
+                  <div class="product-card__row"><span class="price" data-usd="19.96">$19.96</span>
+                      <button class="btn btn--primary btn--small" data-add="kickstart-genesis-framework-wp-theme" aria-label="add to cart: Kickstart Genesis Framework WP Theme">add to cart</button>
+                  </div>
+              </div>
+          </article>
+      </div>
       <div class="home-dots" data-dots></div>
     </div>
   </section>
