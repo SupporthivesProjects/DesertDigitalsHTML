@@ -39,14 +39,14 @@
               </li>
             </ul>
           </nav>
-          <div class="window__pane">
+          <div class="window__pane window-panel1">
             <form class="auth-form" data-auth="reset" novalidate>
               <h1 class="auth-form__title">Set a <br>new password </h1>
               <div class="auth-form__fields">
                 <div class="field field--password">
-                  <div class="field__box">
+                  <div class="field__box field-box1">
                     <label class="field__label" for="reset-password">New password</label>
-                    <input class="field__input" id="reset-password" name="password" type="password" autocomplete="new-password" data-rule="password">
+                    <input class="field__input" id="reset-password" name="password" type="password" autocomplete="new-password" data-rule="password" placeholder="••••••••••">
                     <button type="button" class="field__toggle" aria-label="Show password">
                       <img src="assets/images/icon-eye.svg" alt="" width="20" height="20">
                     </button>
@@ -54,9 +54,9 @@
                   <p class="field__error">Use at least 10 characters</p>
                 </div>
                 <div class="field field--password">
-                  <div class="field__box">
+                  <div class="field__box field-box1">
                     <label class="field__label" for="reset-repeat">Repeat new password</label>
-                    <input class="field__input" id="reset-repeat" name="repeat" type="password" autocomplete="new-password" data-rule="match" data-match="#reset-password">
+                    <input class="field__input" id="reset-repeat" name="repeat" type="password" autocomplete="new-password" data-rule="match" data-match="#reset-password" placeholder="••••••••••">
                     <button type="button" class="field__toggle" aria-label="Show password">
                       <img src="assets/images/icon-eye.svg" alt="" width="20" height="20">
                     </button>
@@ -65,7 +65,7 @@
                 </div>
               </div>
               <button class="btn btn--dark btn--block" type="submit">save password</button>
-              <p class="auth-form__switch">Need a new link? <a href="forgot-password.php">send again</a>
+              <p class="auth-form__switch login-auth-switch">Need a new link? <a href="forgot-password.php">send again</a>
               </p>
             </form>
           </div>
@@ -74,14 +74,5 @@
     </div>
   </section>
 </main>
-<div class="overlay" id="popup-password-saved" aria-hidden="true">
-  <div class="popup" role="dialog" aria-modal="true" aria-labelledby="popup-password-saved-title">
-    <span class="popup__mark" aria-hidden="true">✓</span>
-    <div class="popup__text">
-      <h2 class="popup__title" id="popup-password-saved-title">Password saved</h2>
-      <p class="popup__body">Your new password is set. Log in with it to reach your downloads and invoices.</p>
-    </div>
-    <a class="btn btn--dark btn--block" href="login.php">log in</a>
-  </div>
-</div>
+
 <?php include 'includes/footer.php'; ?>
