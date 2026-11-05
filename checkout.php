@@ -17,14 +17,14 @@
               <div class="field">
                 <div class="field__box">
                   <label class="field__label" for="bill-name">Full name</label>
-                  <input class="field__input" id="bill-name" name="name" autocomplete="name" data-rule="required">
+                  <input class="field__input" id="bill-name" name="name" autocomplete="name" data-rule="required" placeholder="John Smith">
                 </div>
                 <p class="field__error">Enter your full name</p>
               </div>
               <div class="field">
                 <div class="field__box">
                   <label class="field__label" for="bill-email">Email address</label>
-                  <input class="field__input" id="bill-email" name="email" type="email" autocomplete="email" data-rule="email">
+                  <input class="field__input" id="bill-email" name="email" type="email" autocomplete="email" data-rule="email" placeholder="john@example.com">
                 </div>
                 <p class="field__error">Enter a valid email address</p>
               </div>
@@ -38,7 +38,7 @@
               <div class="field">
                 <div class="field__box">
                   <label class="field__label" for="bill-address">Address</label>
-                  <input class="field__input" id="bill-address" name="address" autocomplete="street-address" data-rule="required">
+                  <input class="field__input" id="bill-address" name="address" autocomplete="street-address" data-rule="required" placeholder="12 Market Street">
                 </div>
                 <p class="field__error">Enter your address</p>
               </div>
@@ -57,17 +57,6 @@
                     <option>Germany</option>
                     <option>Spain</option>
                     <option>Italy</option>
-                    <option>Netherlands</option>
-                    <option>Belgium</option>
-                    <option>Portugal</option>
-                    <option>Sweden</option>
-                    <option>Denmark</option>
-                    <option>Norway</option>
-                    <option>Switzerland</option>
-                    <option>United Arab Emirates</option>
-                    <option>India</option>
-                    <option>Singapore</option>
-                    <option>South Africa</option>
                   </select>
                 </div>
                 <p class="field__error">Pick a country</p>
@@ -76,14 +65,14 @@
                 <div class="field">
                   <div class="field__box">
                     <label class="field__label" for="bill-city">City</label>
-                    <input class="field__input" id="bill-city" name="city" autocomplete="address-level2" data-rule="required">
+                    <input class="field__input" id="bill-city" name="city" autocomplete="address-level2" data-rule="required" placeholder="Manchester">
                   </div>
                   <p class="field__error">Enter your city</p>
                 </div>
                 <div class="field">
                   <div class="field__box">
                     <label class="field__label" for="bill-postcode">Postcode</label>
-                    <input class="field__input" id="bill-postcode" name="postcode" autocomplete="postal-code" data-rule="required">
+                    <input class="field__input" id="bill-postcode" name="postcode" autocomplete="postal-code" data-rule="required" placeholder="M1 1AE">
                   </div>
                   <p class="field__error">Enter your postcode</p>
                 </div>
@@ -92,7 +81,7 @@
             <div class="checkout-form__group">
               <label class="checkbox">
                 <input type="checkbox" name="terms" data-rule="checked">
-                <span>I agree to the <a href="terms.php">Terms and conditions</a> and <a href="privacy.php">Privacy policy</a>. </span>
+                <span class="check-terms">I agree to the <a href="terms.php">Terms and conditions</a> and <a href="privacy.php">Privacy policy</a>. </span>
               </label>
               <div class="captcha">
                 <label>
@@ -167,7 +156,7 @@
             <button class="discount__remove" type="button" data-discount-remove="">remove</button>
           </div>
           <p class="discount__error" data-discount-error="" role="alert" hidden="">That code is not valid</p>
-          <hr class="summary-rule">
+          <hr class="cart-rule">
           <dl class="summary-rows">
             <div class="summary-rows__row">
               <dt>Subtotal</dt>
@@ -180,7 +169,7 @@
           </dl>
           <div class="summary-total">
             <p class="summary-total__label mono">Total today</p>
-            <p class="price price--large" data-total="">$660.78</p>
+            <p class="price price--large price-mb" data-total="">$660.78</p>
             <p class="summary-total__charge mono" data-charge="" hidden="">Charged in US dollars: $660.78.</p>
           </div>
           <div class="payment-logos" data-payment-logos="" aria-label="We accept Visa and Mastercard">

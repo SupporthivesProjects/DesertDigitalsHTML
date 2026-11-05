@@ -7,36 +7,6 @@
           <h1 class="heading-2">Your cart</h1>
           <div class="basket__lines" data-lines="">
             <div class="cart-line">
-              <a href="product.php?id=click-drag-graphics-v2" tabindex="-1" aria-hidden="true">
-                <img class="cart-line__thumb" src="assets/products/click-drag-graphics-v2.jpg" alt="" loading="lazy" decoding="async" width="72" height="96">
-              </a>
-              <div class="cart-line__text">
-                <h2 class="cart-line__title">
-                  <a href="product.php?id=click-drag-graphics-v2">Click Drag Graphics V2</a>
-                </h2>
-                <p class="cart-line__meta">template</p>
-              </div>
-              <div class="cart-line__end">
-                <span class="price" data-usd="111.68">$111.68</span>
-                <button class="cart-line__remove" type="button" data-remove="click-drag-graphics-v2" aria-label="Remove Click Drag Graphics V2">remove</button>
-              </div>
-            </div>
-            <div class="cart-line">
-              <a href="product.php?id=website-development-supremacy" tabindex="-1" aria-hidden="true">
-                <img class="cart-line__thumb" src="assets/products/website-development-supremacy.jpg" alt="" loading="lazy" decoding="async" width="72" height="96">
-              </a>
-              <div class="cart-line__text">
-                <h2 class="cart-line__title">
-                  <a href="product.php?id=website-development-supremacy">Website Development Supremacy</a>
-                </h2>
-                <p class="cart-line__meta">e-book</p>
-              </div>
-              <div class="cart-line__end">
-                <span class="price" data-usd="111.06">$111.06</span>
-                <button class="cart-line__remove" type="button" data-remove="website-development-supremacy" aria-label="Remove Website Development Supremacy">remove</button>
-              </div>
-            </div>
-            <div class="cart-line">
               <a href="product.php?id=website-development-domination" tabindex="-1" aria-hidden="true">
                 <img class="cart-line__thumb" src="assets/products/website-development-domination.jpg" alt="" loading="lazy" decoding="async" width="72" height="96">
               </a>
@@ -81,21 +51,6 @@
                 <button class="cart-line__remove" type="button" data-remove="web-security-development-and-strategy" aria-label="Remove Web Security Development And Strategy">remove</button>
               </div>
             </div>
-            <div class="cart-line">
-              <a href="product.php?id=user-interface-graphics" tabindex="-1" aria-hidden="true">
-                <img class="cart-line__thumb" src="assets/products/user-interface-graphics.jpg" alt="" loading="lazy" decoding="async" width="72" height="96">
-              </a>
-              <div class="cart-line__text">
-                <h2 class="cart-line__title">
-                  <a href="product.php?id=user-interface-graphics">User Interface Graphics</a>
-                </h2>
-                <p class="cart-line__meta">e-book</p>
-              </div>
-              <div class="cart-line__end">
-                <span class="price" data-usd="108.58">$108.58</span>
-                <button class="cart-line__remove" type="button" data-remove="user-interface-graphics" aria-label="Remove User Interface Graphics">remove</button>
-              </div>
-            </div>
           </div>
           <div class="basket__empty" data-empty="" hidden="">
             <p class="body-large muted">Your cart is empty.</p>
@@ -108,22 +63,22 @@
           <dl class="summary-rows">
             <div class="summary-rows__row">
               <dt data-subtotal-label="">Subtotal, 6 products</dt>
-              <dd data-subtotal="">$660.78</dd>
+              <dd data-subtotal="disc-data">$660.78</dd>
             </div>
             <div class="summary-rows__row">
               <dt data-discount-label="">Discount</dt>
-              <dd data-discount="" class="">add a code at checkout</dd>
+              <dd data-discount="" class="disc-data">add a code at checkout</dd>
             </div>
           </dl>
-          <hr class="summary-rule">
+          <hr class="summary-rule cart-rule">
           <div class="summary-total">
             <p class="summary-total__label mono">Total at checkout</p>
-            <p class="price price--large" data-total="">$660.78</p>
+            <p class="price price--large price-mb" data-total="">$660.78</p>
           </div>
           <a class="btn btn--primary btn--block" href="checkout.php">go to checkout</a>
         </aside>
       </div>
-      <div class="basket__card is-empty mt-5"  data-cart="" data-reveal="">
+      <!-- <div class="basket__card is-empty mt-5"  data-cart="" data-reveal="">
         <div class="basket__main">
           <h1 class="heading-2">Your cart</h1>
           <div class="basket__lines" data-lines="" hidden=""></div>
@@ -134,7 +89,7 @@
           <a class="basket__back" href="store.php" data-back="">
             <span aria-hidden="true">&lt;</span>keep shopping </a>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </div>
