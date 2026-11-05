@@ -1,0 +1,84 @@
+.cart-rule{
+    height: 1px;
+    border: 0;
+    background: var(--brand-sand, #F3E6D0) !important;
+    margin: 0px !important;
+}
+.summary-rows__row .disc-data ,.summary-rows__row dd{
+margin-bottom: 0px !important;
+}
+.basket .cart-line__remove,.basket .cart-line__meta{
+    color: var(--brand-warm-black, #15110C) !important;
+}
+.field__input::placeholder{
+    color: var(--brand-warm-black, #15110C);
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; 
+}
+.field__label {
+    color: var(--brand-warm-black, #15110C);
+}
+.check-terms{
+    color: rgba(21, 17, 12, 0.68);
+font-family: Manrope;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 24px */
+}
+.check-terms a{
+    text-underline-offset:1px !important;
+}
+.checkout-form__note{
+color: var(--brand-warm-black, #15110C) !important;
+}
+.payment-sub{
+    color: var(--brand-warm-black, #15110C);
+text-align: center;
+margin: 0px;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 25.6px */
+}
+.pc-txt{
+    color: var(--brand-warm-black, #15110C);
+margin: 0px !important;
+font-family: "Fira Code";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 130%; /* 23.4px */
+}
+
+
+@media (max-width: 820px) {
+    .basket__main {
+        gap: 40px !important;
+        padding: 40px 24px !important;
+        background: #ffffff !important;
+    }
+        .basket__card{
+            gap: 16px;
+            background: #ffffff !important;
+        }
+        .basket__summary{
+            padding: 40px 24px !important;
+        }
+        .price-mb{
+            font-size: 42px !important;
+        }
+        .payment-card{
+            padding: 32px 24px !important;
+        }
+         .paycom-card{
+            padding: 32px 24px !important;
+         }
+         .pay-result{
+            gap:32px;
+         }
+}
