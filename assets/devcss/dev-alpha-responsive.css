@@ -14,6 +14,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .menu.is-open {
+        opacity: 1;
+    }
     .logo span {
         color: var(--brand-sand, #F3E6D0);
         color: var(--brand-sand, #F3E6D0);

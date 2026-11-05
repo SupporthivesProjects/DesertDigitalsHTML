@@ -23,7 +23,9 @@ ol, ul {
     color: var(--brand-sand, #F3E6D0);
     opacity: 0.66;
 } 
-
+.menu.is-open {
+    opacity: 0;
+}
 /* -------------------foooter------------------*/
 .site-footer {
     background: var(--brand-warm-black, #15110C);
