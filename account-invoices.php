@@ -1,6 +1,8 @@
 <?php include 'includes/header.php'; ?>
+  
+  
 
-  <section class="account-hero">
+  <section class="account-hero t_cap_two">
     <img fetchpriority="high" class="account-hero__image" src="assets/images/account-vault.jpg" alt="" width="2400" height="1029" data-fade="done">
     <div class="account-hero__overlay"></div>
     <div class="wrap account-hero__greeting">
@@ -39,7 +41,7 @@
       <div class="account-head" data-reveal="">
         <h2 class="heading-2">Invoices</h2>
       </div>
-      <div class="account-panel ledger" data-ledger="" data-reveal="">
+      <div class="account-panel ledger invoice_t" data-ledger="" data-reveal="">
         <div class="ledger__columns" aria-hidden="true">
           <span>reference</span>
           <span>date</span>
@@ -103,7 +105,7 @@
           </div>
         </div>
         <div class="ledger__summary">
-          <span data-invoice-summary="">4 invoices since Mar 2026</span>
+          <span data-invoice-summary="" class="diff_colort">4 invoices since Mar 2026</span>
           <span data-invoice-total="">$228.90 in total</span>
         </div>
       </div>
