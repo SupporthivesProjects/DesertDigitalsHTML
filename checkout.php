@@ -16,35 +16,35 @@
               <h2 class="heading-4" id="billing-title">Billing details for your invoice</h2>
               <div class="field">
                 <div class="field__box">
-                  <label class="field__label" for="bill-name">Full name</label>
+                  <label class="field__label field__labell" for="bill-name">Full name</label>
                   <input class="field__input" id="bill-name" name="name" autocomplete="name" data-rule="required" placeholder="John Smith">
                 </div>
                 <p class="field__error">Enter your full name</p>
               </div>
               <div class="field">
                 <div class="field__box">
-                  <label class="field__label" for="bill-email">Email address</label>
+                  <label class="field__label field__labell" for="bill-email">Email address</label>
                   <input class="field__input" id="bill-email" name="email" type="email" autocomplete="email" data-rule="email" placeholder="john@example.com">
                 </div>
                 <p class="field__error">Enter a valid email address</p>
               </div>
               <div class="field">
                 <div class="field__box">
-                  <label class="field__label" for="bill-dob">Date of birth</label>
+                  <label class="field__label field__labell" for="bill-dob">Date of birth</label>
                   <input class="field__input" id="bill-dob" name="dob" inputmode="numeric" autocomplete="bday" placeholder="DD/MM/YYYY" maxlength="10" data-rule="required" data-dob="">
                 </div>
                 <p class="field__error">Enter your date of birth as DD/MM/YYYY</p>
               </div>
               <div class="field">
                 <div class="field__box">
-                  <label class="field__label" for="bill-address">Address</label>
+                  <label class="field__label field__labell" for="bill-address">Address</label>
                   <input class="field__input" id="bill-address" name="address" autocomplete="street-address" data-rule="required" placeholder="12 Market Street">
                 </div>
                 <p class="field__error">Enter your address</p>
               </div>
               <div class="field">
                 <div class="field__box">
-                  <label class="field__label" for="bill-country">Country</label>
+                  <label class="field__label field__labell" for="bill-country">Country</label>
                   <select class="field__input" id="bill-country" name="country" autocomplete="country-name" data-rule="required">
                     <option value="">Choose a country</option>
                     <option>United Kingdom</option>
@@ -64,14 +64,14 @@
               <div class="form__row">
                 <div class="field">
                   <div class="field__box">
-                    <label class="field__label" for="bill-city">City</label>
+                    <label class="field__label field__labell" for="bill-city">City</label>
                     <input class="field__input" id="bill-city" name="city" autocomplete="address-level2" data-rule="required" placeholder="Manchester">
                   </div>
                   <p class="field__error">Enter your city</p>
                 </div>
                 <div class="field">
                   <div class="field__box">
-                    <label class="field__label" for="bill-postcode">Postcode</label>
+                    <label class="field__label field__labell" for="bill-postcode">Postcode</label>
                     <input class="field__input" id="bill-postcode" name="postcode" autocomplete="postal-code" data-rule="required" placeholder="M1 1AE">
                   </div>
                   <p class="field__error">Enter your postcode</p>
