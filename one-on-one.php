@@ -1,7 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
 <div class="page--light">
-  <section class="session-hero">
+  <section class="session-hero oneonone_sec_1">
     <div class="session-hero__copy">
       <div class="session-hero__heading">
         <h1 class="heading-1">An hour with<br>a developer</h1>
@@ -50,9 +50,85 @@
       </ol>
     </div>
   </section>
+  <section class="oneononesec_3">
+    <div class="container">
+      <div class="oneonone_out">
+        <div class="oneonoen_in">
+          <h2 class="oneoneone_head">What a session looks like</h2>
+          <p class="oneonone_p">Your screen, your code and a developer on the call. This one is an hour on a block that would not validate.</p>
+        </div>
+        <div class="oneonone_in2">
+          <img src="./assets/images/oneononeCallWindow.png" alt="" class="oneonone_img mobile_none_sk">
+          <img src="./assets/images/oneoneone_callwall_ph.png" alt="" class="oneonone_img desk_none_sk">
+          <div class="mobile_none_sk">
+            <div class="oneonone_dot1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                <circle cx="4" cy="4" r="4" fill="#E9B872"/>
+              </svg>
+            </div>
+            <div class="oneonone_line1"></div>
+            <div class="oneonone_div1">
+              <p class="oneoneone_div1_p">your screen</p>
+              <p class="oneonone_div1_p2">You share the project you are stuck on. Nothing to upload first.</p>
+            </div>
+            <div class="oneonone_dot2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                <circle cx="4" cy="4" r="4" fill="#E9B872"/>
+              </svg>
+            </div>
+            <div class="oneonone_line2"></div>
+            <div class="oneonone_div2">
+              <p class="oneoneone_div1_p">the fix</p>
+              <p class="oneonone_div1_p2">Each change is talked through as it is made.</p>
+            </div>
+            <div class="oneonone_dot3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                <circle cx="4" cy="4" r="4" fill="#E9B872"/>
+              </svg>
+            </div>
+            <div class="oneonone_line3"></div>
+            <div class="oneonone_div3">
+              <p class="oneoneone_div1_p">the developer</p>
+              <p class="oneonone_div1_p2" style="text-align: start;">Matched to your stack before the call.</p>
+            </div>
+            <div class="oneonone_dot4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                <circle cx="4" cy="4" r="4" fill="#E9B872"/>
+              </svg>
+            </div>
+            <div class="oneonone_line4"></div>
+            <div class="oneonone_div4">
+              <p class="oneoneone_div1_p">the notes</p>
+              <p class="oneonone_div1_p2" style="text-align: start;">Written up during the hour, yours to keep.</p>
+            </div>
+          </div>
+        </div>
+        <div class="oneonone_in3">
+          <p class="oneonone3_p">What to bring to the call</p>
+          <div class="oneonone3_inner">
+            <div class="oneonone3_inner_card">
+              <div class="oneonone_rule_"></div>
+              <p class="oneonone3_inner_p">your code</p>
+              <p class="oneonone3_inner_p2">A link to the repository, or the files.</p>
+            </div>
+            <div class="oneonone3_inner_card">
+              <div class="oneonone_rule_"></div>
+              <p class="oneonone3_inner_p">the problem</p>
+              <p class="oneonone3_inner_p2">The error, or what you expected instead.</p>
+            </div>
+            <div class="oneonone3_inner_card">
+              <div class="oneonone_rule_"></div>
+              <p class="oneonone3_inner_p">your setup</p>
+              <p class="oneonone3_inner_p2">Your stack and the versions you run.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="brief" id="brief">
     <div class="wrap brief__layout">
-      <div class="brief__copy">
+      <div class="brief__copy oneonone_brief_copy">
         <h2 class="heading-2">Priced by the hour</h2>
         <p class="body-large muted">Sessions start from <span data-rate data-usd="0"></span> an hour. The final rate depends on the stack and how many hours the brief needs, and we confirm it with you before anything is booked.</p>
         <ul class="fits">

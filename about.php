@@ -1,5 +1,5 @@
 <?php include 'includes/header.php'; ?>
-  
+
     <section class="page-hero about-hero">
         <img
             fetchpriority="high"
@@ -22,55 +22,36 @@
     <section class="about-story">
         <div class="wrap">
             <div class="about-story__intro" data-reveal="">
-                <h2 class="heading-2 about-story__title">Why the store exists</h2>
-                <div class="body-large about-story__text">
-                    <p>
-                        Most of what we know about building for the web came from someone who had already done it. A
-                        course, a book, a template we took apart line by line until it made sense.
-                    </p>
-                    <p>
-                        desertdigitals keeps that kind of material in one place. Every product says what it is, what is
-                        inside and what it costs, so you can decide before you pay.
-                    </p>
-                    <p>
-                        When the material is not enough, you can book an hour with a developer and work through your own
-                        code.
-                    </p>
+                <div class="about2_out">
+                    <h2 class="heading-2 about-story__title">Why the store exists</h2>
+                    <img src="./assets/images/about_shelf2.png" alt="" class="about_img2">
+                </div>
+                <div class="about2_out2">
+                    <p class="about2_p">Most of what we know about building for the web came from someone who had already done it. A course, a book, a template we took apart line by line until it made sense.<br><br>
+
+                    desertdigitals keeps that kind of material in one place. Every product says what it is, what is inside and what it costs, so you can decide before you pay.<br><br>
+
+                    When the material is not enough, you can book an hour with a developer and work through your own code.</p>
+                    <div class="w-100">
+                        <div class="about2_inn">
+                            <p class="about2_inn_p">E-books</p>
+                            <p class="about2_inn_p2">Read it, mark it up, keep it on the shelf.</p>
+                        </div>
+                        <div class="about2_inn">
+                            <p class="about2_inn_p">Video courses</p>
+                            <p class="about2_inn_p2">Watch it built, then build it yourself.</p>
+                        </div>
+                        <div class="about2_inn">
+                            <p class="about2_inn_p">Software</p>
+                            <p class="about2_inn_p2">Plugins and scripts you install and run.</p>
+                        </div>
+                        <div class="about2_inn">
+                            <p class="about2_inn_p">Templates</p>
+                            <p class="about2_inn_p2">Themes and layouts to start a build from.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- counts come from the catalogue -->
-            <ul class="shelves" data-shelves="" aria-label="What is on the shelves" data-reveal="" style="">
-                <li class="shelves__item">
-                    <a href="store.php?type=ebook">
-                        <span class="shelves__count">58</span>
-                        <span class="shelves__label">e-books</span>
-                    </a>
-                </li>
-                <li class="shelves__item">
-                    <a href="store.php?type=video">
-                        <span class="shelves__count">26</span>
-                        <span class="shelves__label">video courses</span>
-                    </a>
-                </li>
-                <li class="shelves__item">
-                    <a href="store.php?type=software">
-                        <span class="shelves__count">24</span>
-                        <span class="shelves__label">software</span>
-                    </a>
-                </li>
-                <li class="shelves__item">
-                    <a href="store.php?type=template">
-                        <span class="shelves__count">5</span>
-                        <span class="shelves__label">templates</span>
-                    </a>
-                </li>
-                <li class="shelves__item">
-                    <a href="store.php?type=audiobook">
-                        <span class="shelves__count">1</span>
-                        <span class="shelves__label">audio book</span>
-                    </a>
-                </li>
-            </ul>
         </div>
     </section>
     <section class="about-process">
@@ -266,12 +247,11 @@
                 store. When the tools move on, so does the product. Find something for your next build, or book an hour
                 when you are stuck.
             </p>
-            <div class="about-closing__buttons reveal-up" data-reveal="">
+            <div class="about-closing__buttons" data-reveal="">
                 <a class="btn btn--primary" href="store.php">browse the store</a>
                 <a class="btn btn--secondary" href="one-on-one.php">book a 1 on 1</a>
             </div>
         </div>
     </section>
-
 
 <?php include 'includes/footer.php'; ?>
