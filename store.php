@@ -166,7 +166,6 @@
                       </label>
                   </li>
               </ul>
-
             </li>
             <li class="browse__item">
               <button class="browse__row" data-type="template">

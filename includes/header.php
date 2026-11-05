@@ -57,7 +57,7 @@
             </ul>
           </div>
           <span class="site-header__hide-mobile" data-account-link=""><a href="login.php">login</a></span>
-          <a href="cart.php">cart(<span class="cart-count" data-cart-count="">0</span>)</a>
+          <a href="cart.php" class="cat-in-deskt">cart(<span class="cart-count" data-cart-count="">0</span>)</a>
           <button class="burger" aria-label="Open menu" aria-expanded="false" data-menu-open=""><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18M9 16h12"></path></svg></button>
         </div>
     </header>

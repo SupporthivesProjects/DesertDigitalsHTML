@@ -16,3 +16,101 @@ ol, ul {
     margin-top: 7px;
 
 }
+.logo span{
+    color: var(--brand-sand, #F3E6D0);
+}
+.site-nav__link{
+    color: var(--brand-sand, #F3E6D0);
+    opacity: 0.66;
+} 
+
+/* -------------------foooter------------------*/
+.site-footer {
+    background: var(--brand-warm-black, #15110C);
+}
+
+.site-footer__about p {
+    margin-top: 16px;
+    max-width: 300px;
+    color: var(--sand-66);
+    color: var(--brand-sand, #F3E6D0);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 24px */
+    opacity: 0.66;
+}
+
+.site-footer__copy-full{
+    color: var(--brand-sand, #F3E6D0);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.26px;
+    opacity: 0.42;
+}
+.site-footer__col h2{
+    color: var(--brand-sand, #F3E6D0);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.26px;
+    opacity: 0.42;
+}
+.site-footer__col a{
+    color: var(--brand-sand, #F3E6D0);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 24px */
+    opacity: 0.66;
+}
+
+/* ----------------------tc---------------------- */
+.legal-hero__copy .heading-1{
+    color: var(--brand-sand, #F3E6D0);
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 104%;
+    letter-spacing: -3.6px;
+}
+.legal-hero__copy p{
+    color: var(--brand-sand, #F3E6D0);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.28px;
+    opacity: 0.42;
+}
+.legal p{
+    color: var(--brand-warm-black, #15110C);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    opacity: 0.68;
+}
+.legal__section .heading-3{
+    color: var(--brand-warm-black, #15110C);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: -0.44px;
+}
+
+
+/* ---------------------eeror---------------- */
+.lost__copy h1{
+    color: var(--brand-sand, #F3E6D0);
+    text-align: center;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 104%;
+    letter-spacing: -3.6px;
+}

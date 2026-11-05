@@ -32,89 +32,89 @@
     return DD.account() ? '<a href="account.html">account</a>' : '<a href="login.html">login</a>';
   }
 
-  function header() {
-    const links = NAV.map(n => `<a class="site-nav__link" href="${n.href}"${currentAttr(n.key)}>${n.label}</a>`).join('');
-    const menuLinks = NAV.map(n => `<a class="menu__link" href="${n.href}"${currentAttr(n.key)}>${n.label}</a>`).join('');
-    const options = currencyCodes.map(code => `
-      <li>
-        <button class="currency__option" role="option" data-currency="${code}" aria-selected="${code === DD.currency}">
-          ${code.toLowerCase()}<span>${DD.currencies[code].symbol}</span>
-        </button>
-      </li>`).join('');
-    const menuCurrencies = currencyCodes.map(code =>
-      `<button data-currency="${code}" aria-pressed="${code === DD.currency}">${code.toLowerCase()}</button>`).join('');
-    const groundClass = ground !== 'dark' ? ' site-header--' + ground : '';
+  // function header() {
+  //   const links = NAV.map(n => `<a class="site-nav__link" href="${n.href}"${currentAttr(n.key)}>${n.label}</a>`).join('');
+  //   const menuLinks = NAV.map(n => `<a class="menu__link" href="${n.href}"${currentAttr(n.key)}>${n.label}</a>`).join('');
+  //   const options = currencyCodes.map(code => `
+  //     <li>
+  //       <button class="currency__option" role="option" data-currency="${code}" aria-selected="${code === DD.currency}">
+  //         ${code.toLowerCase()}<span>${DD.currencies[code].symbol}</span>
+  //       </button>
+  //     </li>`).join('');
+  //   const menuCurrencies = currencyCodes.map(code =>
+  //     `<button data-currency="${code}" aria-pressed="${code === DD.currency}">${code.toLowerCase()}</button>`).join('');
+  //   const groundClass = ground !== 'dark' ? ' site-header--' + ground : '';
 
-    return `
-      <header class="site-header${groundClass}" data-header>
-        ${logo()}
-        <nav class="site-nav" aria-label="Main">${links}</nav>
-        <div class="site-header__right">
-          <div class="currency site-header__hide-mobile" data-currency-select>
-            <button class="currency__button" aria-haspopup="listbox" aria-expanded="false">
-              <span data-currency-label>${DD.currency.toLowerCase()}</span>${ICON_DOWN}
-            </button>
-            <ul class="currency__list" role="listbox" aria-label="Currency">${options}</ul>
-          </div>
-          <span class="site-header__hide-mobile" data-account-link>${accountLink()}</span>
-          <a href="cart.html">cart(<span class="cart-count" data-cart-count>${DD.cartIds().length}</span>)</a>
-          <button class="burger" aria-label="Open menu" aria-expanded="false" data-menu-open>${ICON_MENU}</button>
-        </div>
-      </header>
-      <div class="menu" id="menu" aria-hidden="true" role="dialog" aria-label="Menu">
-        <div class="menu__top">${logo()}<button class="menu__close" data-menu-close>close${ICON_X}</button></div>
-        <nav class="menu__nav" aria-label="Mobile">${menuLinks}</nav>
-        <div class="menu__meta">
-          <span data-account-link>${accountLink()}</span>
-          <div class="menu__currency">currency:${menuCurrencies}</div>
-        </div>
-      </div>`;
-  }
+  //   return `
+  //     <header class="site-header${groundClass}" data-header>
+  //       ${logo()}
+  //       <nav class="site-nav" aria-label="Main">${links}</nav>
+  //       <div class="site-header__right">
+  //         <div class="currency site-header__hide-mobile" data-currency-select>
+  //           <button class="currency__button" aria-haspopup="listbox" aria-expanded="false">
+  //             <span data-currency-label>${DD.currency.toLowerCase()}</span>${ICON_DOWN}
+  //           </button>
+  //           <ul class="currency__list" role="listbox" aria-label="Currency">${options}</ul>
+  //         </div>
+  //         <span class="site-header__hide-mobile" data-account-link>${accountLink()}</span>
+  //         <a href="cart.html">cart(<span class="cart-count" data-cart-count>${DD.cartIds().length}</span>)</a>
+  //         <button class="burger" aria-label="Open menu" aria-expanded="false" data-menu-open>${ICON_MENU}</button>
+  //       </div>
+  //     </header>
+  //     <div class="menu" id="menu" aria-hidden="true" role="dialog" aria-label="Menu">
+  //       <div class="menu__top">${logo()}<button class="menu__close" data-menu-close>close${ICON_X}</button></div>
+  //       <nav class="menu__nav" aria-label="Mobile">${menuLinks}</nav>
+  //       <div class="menu__meta">
+  //         <span data-account-link>${accountLink()}</span>
+  //         <div class="menu__currency">currency:${menuCurrencies}</div>
+  //       </div>
+  //     </div>`;
+  // }
 
-  function footer() {
-    return `
-      <footer class="site-footer">
-        <div class="wrap">
-          <div class="site-footer__grid">
-            <div class="site-footer__about">
-              ${logo()}
-              <p>
-                <span class="site-footer__copy-full">Products for web developers. Video courses, e-books, software,
-                  templates and 1 on 1 time with a developer.</span>
-                <span class="site-footer__copy-short">Products for web developers. E-books, courses, software,
-                  templates and 1 on 1 time with a developer.</span>
-              </p>
-              <a class="site-footer__mail" href="mailto:support@desertdigitals.com">support@desertdigitals.com</a>
-            </div>
-            <div class="site-footer__col">
-              <h2>// shop</h2><a href="store.html">Products</a><a href="one-on-one.html">1 on 1</a>
-            </div>
-            <div class="site-footer__col">
-              <h2>// company</h2><a href="about.html">About us</a><a href="contact.html">Contact us</a>
-            </div>
-            <div class="site-footer__col">
-              <h2>// account</h2><a href="login.html">Log in</a><a href="sign-up.html">Sign up</a>
-            </div>
-            <div class="site-footer__col">
-              <h2>// legal</h2><a href="terms.html">Terms and conditions</a><a href="privacy.html">Privacy policy</a>
-            </div>
-          </div>
-          <div class="site-footer__bottom">
-            <span>
-              <span class="site-footer__copy-full">© 2026 desertdigitals. All rights reserved.</span>
-              <span class="site-footer__copy-short">© 2026 desertdigitals</span>
-            </span>
-            <div class="payment-logos" aria-label="We accept Visa and Mastercard">${PAYMENT_LOGOS}</div>
-          </div>
-        </div>
-      </footer>`;
-  }
+  // function footer() {
+  //   return `
+  //     <footer class="site-footer">
+  //       <div class="wrap">
+  //         <div class="site-footer__grid">
+  //           <div class="site-footer__about">
+  //             ${logo()}
+  //             <p>
+  //               <span class="site-footer__copy-full">Products for web developers. Video courses, e-books, software,
+  //                 templates and 1 on 1 time with a developer.</span>
+  //               <span class="site-footer__copy-short">Products for web developers. E-books, courses, software,
+  //                 templates and 1 on 1 time with a developer.</span>
+  //             </p>
+  //             <a class="site-footer__mail" href="mailto:support@desertdigitals.com">support@desertdigitals.com</a>
+  //           </div>
+  //           <div class="site-footer__col">
+  //             <h2>// shop</h2><a href="store.html">Products</a><a href="one-on-one.html">1 on 1</a>
+  //           </div>
+  //           <div class="site-footer__col">
+  //             <h2>// company</h2><a href="about.html">About us</a><a href="contact.html">Contact us</a>
+  //           </div>
+  //           <div class="site-footer__col">
+  //             <h2>// account</h2><a href="login.html">Log in</a><a href="sign-up.html">Sign up</a>
+  //           </div>
+  //           <div class="site-footer__col">
+  //             <h2>// legal</h2><a href="terms.html">Terms and conditions</a><a href="privacy.html">Privacy policy</a>
+  //           </div>
+  //         </div>
+  //         <div class="site-footer__bottom">
+  //           <span>
+  //             <span class="site-footer__copy-full">© 2026 desertdigitals. All rights reserved.</span>
+  //             <span class="site-footer__copy-short">© 2026 desertdigitals</span>
+  //           </span>
+  //           <div class="payment-logos" aria-label="We accept Visa and Mastercard">${PAYMENT_LOGOS}</div>
+  //         </div>
+  //       </div>
+  //     </footer>`;
+  // }
 
   function mount(name, html) {
     document.querySelectorAll('[data-partial="' + name + '"]').forEach(el => { el.outerHTML = html; });
   }
-  mount('header', header());
-  mount('footer', footer());
+  // mount('header', header());
+  // mount('footer', footer());
   document.querySelectorAll('[data-payment-logos]').forEach(el => { el.innerHTML = PAYMENT_LOGOS; });
 
   const bar = document.querySelector('[data-header]');
