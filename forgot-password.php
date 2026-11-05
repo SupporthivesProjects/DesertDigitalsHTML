@@ -38,23 +38,23 @@
               </li>
             </ul>
           </nav>
-          <div class="window__pane">
+          <div class="window__pane window-panel1">
             <form class="auth-form" data-auth="forgot" novalidate>
               <div class="auth-form__head">
-                <h1 class="auth-form__title">Reset <br>your password </h1>
+                <h1 class="auth-form__title auth-form-title1">Reset <br>your password </h1>
                 <p class="auth-form__lead">Enter the email on your account and we will send a link to set a new password.</p>
               </div>
               <div class="auth-form__fields">
                 <div class="field">
-                  <div class="field__box">
+                  <div class="field__box field-box1">
                     <label class="field__label" for="forgot-email">Email address</label>
-                    <input class="field__input" id="forgot-email" name="email" type="email" autocomplete="email" data-rule="email">
+                    <input class="field__input" id="forgot-email" name="email" type="email" autocomplete="email" data-rule="email" placeholder="john@example.com">
                   </div>
                   <p class="field__error">Enter a valid email address</p>
                 </div>
               </div>
               <button class="btn btn--dark btn--block" type="submit">send reset link</button>
-              <p class="auth-form__switch">Remembered it? <a href="login.html">log in</a>
+              <p class="auth-form__switch login-auth-switch">Remembered it? <a href="login.html">log in</a>
               </p>
             </form>
           </div>

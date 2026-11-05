@@ -18,27 +18,35 @@
               <li class="explorer__item explorer__item--child is-current" aria-current="page"><span class="explorer__icon" aria-hidden="true">·</span><span class="explorer__name">sign-up</span><span class="explorer__open">open</span></li>
             </ul>
           </nav>
-          <div class="window__pane">
+          <div class="window__pane window-panel2">
             <form class="auth-form" data-auth="sign-up" novalidate="">
-              <h1 class="auth-form__title">Create an account</h1>
+              <h1 class="auth-form__title auth-form-title1">Create an account</h1>
               <div class="auth-form__fields">
               <div class="field">
-                <div class="field__box"><label class="field__label" for="signup-name">Full name</label><input class="field__input" id="signup-name" name="name" type="text" autocomplete="name" data-rule="required"></div>
+                <div class="field__box field-box1"><label class="field__label" for="signup-name">Full name</label>
+                <input class="field__input" id="signup-name" name="name" type="text" autocomplete="name" data-rule="required" placeholder="John Smith">
+              </div>
                 <p class="field__error">Enter your full name</p>
               </div>
               <div class="field">
-                <div class="field__box"><label class="field__label" for="signup-email">Email address</label><input class="field__input" id="signup-email" name="email" type="email" autocomplete="email" data-rule="email"></div>
+                <div class="field__box field-box1"><label class="field__label" for="signup-email">Email address</label>
+                <input class="field__input" id="signup-email" name="email" type="email" autocomplete="email" data-rule="email"  placeholder="john@example.com">
+              </div>
                 <p class="field__error">Enter a valid email address</p>
               </div>
               <div class="field field--password">
-                <div class="field__box"><label class="field__label" for="signup-password">Password</label><input class="field__input" id="signup-password" name="password" type="password" autocomplete="new-password" data-rule="password"><button type="button" class="field__toggle" aria-label="Show password"><img src="assets/images/icon-eye.svg" alt="" width="20" height="20"></button></div>
+                <div class="field__box field-box1"><label class="field__label" for="signup-password">Password</label>
+                <input class="field__input" id="signup-password" name="password" type="password" autocomplete="new-password" data-rule="password" placeholder="••••••••••">
+                <button type="button" class="field__toggle" aria-label="Show password">
+                  <img src="assets/images/icon-eye.svg" alt="" width="20" height="20">
+                </button></div>
                 <p class="field__error">Use at least 10 characters</p>
               </div>
               </div>
-              <label class="checkbox"><input type="checkbox" name="terms" data-rule="checked"><span>I agree to the <a href="terms.php">Terms and conditions</a> and <a href="privacy.php">Privacy policy</a>.</span></label>
+              <label class="checkbox checkbox-inp"><input type="checkbox" name="terms" data-rule="checked"><span>I agree to the <a href="terms.php">Terms and conditions</a> and <a href="privacy.php">Privacy policy</a>.</span></label>
               <div class="captcha"><label><input type="checkbox" data-rule="captcha"> I'm not a robot</label><small><img class="captcha__logo" src="assets/images/recaptcha-logo.svg" alt="" width="32" height="32">reCAPTCHA<br>Privacy · Terms</small></div>
-              <button class="btn btn--dark btn--block" type="submit">create account</button>
-            <p class="auth-form__switch">Have an account? <a href="login.php">log in</a></p>
+              <button class="btn btn--dark btn--block" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">create account</button>
+            <p class="auth-form__switch login-auth-switch">Have an account? <a href="login.php">log in</a></p>
             </form>
           </div>
         </div>
@@ -46,14 +54,33 @@
     </div>
   </section>
 </div>
-<div class="overlay" id="popup-check-email" aria-hidden="true">
-  <div class="popup" role="dialog" aria-modal="true" aria-labelledby="popup-check-email-title">
-    <span class="popup__mark" aria-hidden="true">✓</span>
-    <div class="popup__text">
-      <h2 class="popup__title" id="popup-check-email-title">Check your email</h2>
-      <p class="popup__body">We sent a link to <span data-popup-email>john@example.com</span>. Open it to verify your account and log in. </p>
-    </div>
-    <button class="btn btn--dark btn--block" type="button" data-popup-close>close</button>
-  </div>
-</div>
+
+
+<!-- Modal -->
+        <div class="modal fade  mod-fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+            <div class="modal-dialog modal-dialog-centered mod-cen ">
+                <div class="modal-content login_modal">
+                    <div class="log_modal_div">
+                        <img src="assets/images/popup-mark.png" alt="" width="72" height="72">
+                    </div>
+                    <div class="mod-text">
+                      <h2 class="log_modal_head" id="exampleModalLabel">Check your email</h2>
+                      <p class="log_modal_p">We sent a link to john@example.com. Open it to verify your account and log in.</p>
+                    </div>
+                    <a class="btn log_btn w-100" href="index.php">Close</a>
+                </div>
+            </div>
+        </div>
+
+<script>
+  document.querySelector('[data-auth="sign-up"]').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    var modalElement = document.getElementById('exampleModal');
+    if (!modalElement || !window.bootstrap || !window.bootstrap.Modal) {
+      throw new Error('Bootstrap 5 modal is unavailable.');
+    }
+    window.bootstrap.Modal.getOrCreateInstance(modalElement).show();
+  });
+</script>
 <?php include 'includes/footer.php'; ?>
