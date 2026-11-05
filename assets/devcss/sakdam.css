@@ -426,6 +426,9 @@
     .about2_inn_p2 {
         font-size: 15px;
     }
+    .oneonone3_inner_card {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 780px) and (max-width:991px) {}
