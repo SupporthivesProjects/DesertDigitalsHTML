@@ -1,0 +1,119 @@
+@media only screen and (max-device-width: 600px) {
+
+/* CONATCT US */
+
+.contact-details{
+        width: 100%;
+        margin-top:16px;
+}
+
+    .contact__lead br {
+        display: block;
+    }
+
+        .contact {
+        grid-template-columns: 1fr;
+    }
+
+.contact-details__list {
+  height: 454px;
+}
+
+.store {
+        padding: 40px 0 56px;
+    }
+
+    .price-filter{
+        padding-top: 16px;
+    }
+
+    
+    .ebook-container {
+        padding: 20px 20px 36px;
+    }
+
+    .ebook-breadcrumb {
+        margin-bottom: 24px;
+        gap: 8px;
+    }
+
+    .ebook-product {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        margin:24px 0px 56px;
+    }
+
+    .ebook-visual {
+width: 327px;
+height: 436px;      
+    }
+
+    .ebook-content {
+        gap: 32px;
+    }
+
+    .ebook-heading h1 {
+color: var(--brand-warm-black, #15110C);
+
+/* mobile / heading / h1 */
+font-family: Manrope;
+font-size: 40px;
+font-style: normal;
+font-weight: 800;
+line-height: 110%; /* 44px */
+letter-spacing: -1.8px;    }
+
+    .ebook-description {
+        padding-top: 32px;
+    }
+    
+
+    .ebook-purchase {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .ebook-price {
+color: var(--brand-deep-amber, #A9692A);
+
+/* heading / price */
+font-family: "Fira Code";
+font-size: 42px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 50.4px */
+letter-spacing: -0.84px;    }
+
+.product-hero__add{
+    max-width: 170px;
+}
+
+
+.product-more{
+    padding: 48px 0px;
+}
+
+
+.product-hero {
+    border-bottom: 0px solid var(--base-03, #BDBDBD);
+}
+}
+
+@media only screen and (min-device-width: 950px) and (max-device-width: 998px) {}
+
+
+@media only screen and (min-device-width: 1000px) and (max-device-width: 1199px) {}
+
+
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1348px) {}
+
+@media only screen and (min-device-width: 1349px) and (max-device-width: 1439px) {}
+
+@media only screen and (min-device-width: 1440px) and (max-device-width: 1499px) {}
+
+@media only screen and (min-device-width: 1500px) and (max-device-width: 1699px) {}
+
+@media only screen and (min-device-width: 1700px) and (max-device-width: 1799px) {}
+
+@media only screen and (min-device-width: 1800px) and (max-device-width: 1919px) {}

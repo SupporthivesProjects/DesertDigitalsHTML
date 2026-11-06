@@ -6,7 +6,7 @@
     <form class="form contact__form" data-contact-form novalidate>
       <div class="contact__heading">
         <h1 class="heading-1">Tell us what<br>you need.</h1>
-        <p class="body-large contact__lead">A person reads every message. <br>Pick a topic so it reaches the right one.</p>
+        <p class="body-large contact__lead">A person reads every message. <br> Pick a topic so it reaches the right one.</p>
       </div>
 
       <fieldset class="topics">
@@ -56,14 +56,15 @@
           <dd class="contact-details__note">Write any time. Quote your order reference if it is about an order.</dd>
         </div>
         <div class="contact-details__entry">
-          <dt class="mono">About an order</dt>
-          <dd class="heading-3">DD-10482</dd>
-          <dd class="contact-details__note">Your references are on every invoice in your account.</dd>
+          <dt class="mono">Company name</dt>
+          <dd class="heading-3">Desertdigitals Ltd</dd>
+         
         </div>
         <div class="contact-details__entry">
-          <dt class="mono">Time with a developer</dt>
-          <dd class="heading-3"><a href="one-on-one.html">A 1 on 1 from <span data-rate data-usd="0"></span> an hour</a></dd>
-          <dd class="contact-details__note">When a reply is not enough, book an hour with a developer.</dd>
+          <dt class="mono">Company address</dt>
+          <dd class="heading-3"><a href="one-on-one.html">12 Market Street <br>
+London EC1A 1BB <br>
+United Kingdom</dd>
         </div>
       </dl>
     </aside>
