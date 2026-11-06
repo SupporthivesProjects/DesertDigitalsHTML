@@ -14,13 +14,6 @@
       <div class="home-hero__foot mono reveal" style="--d:1.1s"><span class="home-hero__hint--pointer"><b>//</b> hover the dunes to view source</span><span class="home-hero__hint--touch"><b>//</b> drag across the dunes to view source</span></div>
     </section>
 
-<<<<<<< HEAD
-    <section class="home-section home-section--light" id="produvcts">
-      <div class="wrap">
-        <div class="home-head">
-          <div><span class="label reveal">favourites</span><h2 class="heading-2 reveal-lines"><span class="line"><span>Our favourite products</span></span></h2></div>
-          <a href="store.html" class="link-arrow reveal">view all products</a>
-=======
   <section class="home-section home-section--light" id="produvcts">
     <div class="wrap">
       <div class="home-head">
@@ -135,7 +128,6 @@
           <span class="label label--on-dark">made by people who ship</span>
           <h2 class="heading-2 reveal-lines"><span class="line"><span>Made by developers</span></span><span class="line"><span style="--d:.08s">who ship</span></span></h2>
           <p class="home-lead">Every product is written by working developers, checked by a second pair of eyes before release and revised when the tools it covers change.</p>
->>>>>>> rahul
         </div>
         <div class="home-favourites" data-favourites></div>
         <div class="home-dots" data-dots></div>
