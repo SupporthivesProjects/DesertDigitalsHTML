@@ -119,7 +119,7 @@
     </div>
   </section>
 
-  <section class="home-section home-section--light" id="ship">
+  <!-- <section class="home-section home-section--light" id="ship">
     <div class="wrap">
       <div class="band reveal" data-band>
         <img class="band__image" data-parallax="-0.08" src="assets/images/home-made-by-developers.jpg" alt="A sandstone laptop half buried in a dune ridge at sunset" width="2400" height="1355" loading="lazy" decoding="async">
@@ -132,7 +132,8 @@
         <div class="home-favourites" data-favourites></div>
         <div class="home-dots" data-dots></div>
       </div>
-    </section>
+    </div>
+  </section>
 
     <section class="home-section home-section--light" id="perks">
       <div class="wrap home-perks">
@@ -152,9 +153,9 @@
           <div class="feature reveal" style="--d:.24s"><span class="feature__number">04</span><h3 class="feature__title">A developer on hand</h3><p class="feature__text">Book a 1 on 1 by the hour when a product is not enough.</p></div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="home-section home-section--dark" id="one-on-one">
+    <!-- <section class="home-section home-section--dark" id="one-on-one">
       <div class="wrap home-one-on-one">
         <div class="route reveal" data-route><canvas></canvas>
           <span class="route__tag" data-route-start style="--d:.6s"><b>&gt;</b> stuck</span>
@@ -169,7 +170,7 @@
           <div class="home-one-on-one__buttons reveal" style="--d:.3s"><a href="one-on-one.html#brief" class="btn btn--primary">book a 1 on 1</a><a href="one-on-one.html" class="btn home-btn--ghost">how sessions work</a></div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="home-section home-section--light" id="ship">
       <div class="wrap">
