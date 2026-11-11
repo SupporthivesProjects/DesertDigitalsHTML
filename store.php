@@ -477,7 +477,6 @@
       </div>
     </div>
   </section>
-<<<<<<< HEAD
 <?php include 'includes/footer.php'; ?>
 
 
@@ -720,6 +719,3 @@
 })();
 </script>
 
-=======
-<?php include 'includes/footer.php'; ?>
->>>>>>> a173c6fade0bda8f3a821202f757dd327f912221
