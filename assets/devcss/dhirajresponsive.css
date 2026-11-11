@@ -19,6 +19,46 @@
   height: 454px;
 }
 
+/* Sort dropdown */
+.store__tools .dropdown {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+}
+
+.store__tools .dropdown__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* Sort label */
+.store__tools .dropdown__key {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+/* Selected option */
+.store__tools .dropdown__value {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Dropdown arrow */
+.store__tools .dropdown__button .icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+}
+
 .store {
         padding: 40px 0 56px;
     }
